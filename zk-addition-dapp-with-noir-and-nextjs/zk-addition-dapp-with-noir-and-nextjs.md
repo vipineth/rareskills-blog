@@ -1,6 +1,6 @@
 # ZK-addition-dapp with Noir and Nextjs
 
-![https://static.wixstatic.com/media/6e1afa_d8f9270372b34b4aa443502f98a41aed~mv2.jpg/v1/fill/w_1332,h_697,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6e1afa_d8f9270372b34b4aa443502f98a41aed~mv2.jpg](https://static.wixstatic.com/media/6e1afa_d8f9270372b34b4aa443502f98a41aed~mv2.jpg/v1/fill/w_1332,h_697,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6e1afa_d8f9270372b34b4aa443502f98a41aed~mv2.jpg)
+![ZK Dapp Game built with Noir and Next.js](https://static.wixstatic.com/media/6e1afa_d8f9270372b34b4aa443502f98a41aed~mv2.jpg/v1/fill/w_1332,h_697,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6e1afa_d8f9270372b34b4aa443502f98a41aed~mv2.jpg)
 
 We will demonstrate a step-by-step exploration of a basic zk-dapp designed for verifying additions. This application enables users to prove that the sum of two numbers, X and Y, equals Z without disclosing the actual numbers on the blockchain. Although solving this problem does not necessarily demand zero-knowledge proofs, we will utilize them in this example to maintain simplicity and enhance comprehension.
 
@@ -11,12 +11,12 @@ We will start by cloning [noir-zk-fullstack-example](https://github.com/RareSkil
 git clone https://github.com/RareSkills/noir-zk-fullstack-example.git
 ```
 
->[!NOTE] 
->### <i>To effectively understand the code, it is necessary to have a working knowledge of noir and typescript.</i>
+
+<i>NOTE: To effectively understand the code, it is necessary to have a working knowledge of noir and typescript.</i>
 
 
 ## Installing dependencies 
-We already have specific versions stated in package.json file. To install, run:
+We already have specific versions stated in `package.json` file. To install, run:
 ```bash
 npm install
 ```
@@ -27,7 +27,7 @@ In order to build the project and deploy contracts locally, it is necessary to i
 ```bash
 npx hardhat node
 ```
-You have the flexibility to choose different networks to run on. To do so, you need to make the following adjustments: firstly, modify the contents of the .env file by adding the deployer’s private key and Alchemy’s API key. Afterward, navigate to the hardhat.config.ts file and include a new network configuration.
+You have the flexibility to choose different networks to run on. To do so, you need to make the following adjustments: firstly, modify the contents of the .env file by adding the deployer’s private key and Alchemy’s API key. Afterward, navigate to the `hardhat.config.ts` file and include a new network configuration.
 
 Once done, you can deploy using the **NETWORK** environment variable to specify the desired network. For example NETWORK=mumbai npm run build or NETWORK=sepoia npm run build. For the purpose of this dapp, we will be deploying locally using this command:
 ```bash
@@ -59,31 +59,31 @@ What happens when these are executed?
     });
     ```
 
-    Executing genContract.ts script calls compile() method from NoirServer class which compiles the noir circuit written in ./circuits/src directory and also generates **ACIR** (<i>Abstract Circuit Intermediate Representation</i>). Also initializes this.prover and this.verifier by calling **barretenberg’s** setup_generic_prover_and_verifier with the ACIR generated.
+    Executing `genContract.ts` script calls compile() method from NoirServer class which compiles the noir circuit written in `./circuits/src` directory and also generates **ACIR** (<i>Abstract Circuit Intermediate Representation</i>). Also initializes this.prover and this.verifier by calling **barretenberg’s** setup_generic_prover_and_verifier with the ACIR generated.
     ```typescript
     async compile() {
-    // I'm running on the server so I can use the file system
-    initialiseResolver((id: any) => {
-        try {
-            const code = fs.readFileSync(`circuits/src/${id}`, { encoding: 'utf8' }) as string;
-            return code
-        } catch (err) {
-            console.error(err);
-            throw err;
-        }
-    });
+        // I'm running on the server so I can use the file system
+        initialiseResolver((id: any) => {
+            try {
+                const code = fs.readFileSync(`circuits/src/${id}`, { encoding: 'utf8' }) as string;
+                return code
+            } catch (err) {
+                console.error(err);
+                throw err;
+            }
+        });
+            
+        const compiled_noir = compile({
+            entry_point: 'main.nr',
+        });
+        this.compiled = compiled_noir;
         
-    const compiled_noir = compile({
-        entry_point: 'main.nr',
-    });
-    this.compiled = compiled_noir;
-    
-    this.acir = acir_read_bytes(this.compiled.circuit);
-    [this.prover, this.verifier] = await setup_generic_prover_and_verifier(this.acir);
+        this.acir = acir_read_bytes(this.compiled.circuit);
+        [this.prover, this.verifier] = await setup_generic_prover_and_verifier(this.acir);
     };
     ```
 
-    Additionally, the getSmartContract method is called, which generates a solidity contract at ./contract/plonk_vk.sol. This contract is created as part of the execution process.
+    Additionally, the getSmartContract method is called, which generates a solidity contract at `./contract/plonk_vk.sol`. This contract is created as part of the execution process.
     ```typescript
     getSmartContract() {
         const sc = this.verifier.SmartContract();
@@ -110,28 +110,29 @@ What happens when these are executed?
 
 2. **hardhat compile**
 
-    This command compiles the contract(s) located in the ./contract directory. In this specific case, it compiles the plonk_vk.sol contract.
+    This command compiles the contract(s) located in the `./contract` directory. In this specific case, it compiles the plonk_vk.sol contract.
 
 3. **hardhat run --network ${NETWORK} scripts/deploy.ts**
     ```typescript
     import { writeFileSync } from 'fs';
     import { ethers } from 'hardhat';
     async function main() {
-    // Deploy the verifier contractconst Verifier = await ethers.getContractFactory('TurboVerifier');
-    const verifier = await Verifier.deploy();
-    
-    // Get the address of the deployed verifier contract
-    const verifierAddr = await verifier.deployed();
-    
-    // Create a config object
-    const config = {
-        chainId: ethers.provider.network.chainId,
-        verifier: verifierAddr.address,};
+        // Deploy the verifier contractconst Verifier = await ethers.getContractFactory('TurboVerifier');
+        const verifier = await Verifier.deploy();
         
-    // Print the config
-    console.log('Deployed at', config);
-    writeFileSync('utils/addresses.json', JSON.stringify(config), { flag: 'w' });
-    process.exit();
+        // Get the address of the deployed verifier contract
+        const verifierAddr = await verifier.deployed();
+        
+        // Create a config object
+        const config = {
+            chainId: ethers.provider.network.chainId,
+            verifier: verifierAddr.address,
+        };
+            
+        // Print the config
+        console.log('Deployed at', config);
+        writeFileSync('utils/addresses.json', JSON.stringify(config), { flag: 'w' });
+        process.exit();
     }
     
     // We recommend this pattern to be able to use async/await everywhere
@@ -142,7 +143,7 @@ What happens when these are executed?
     });
     ```
 
-    This script deploys plonk_vk.sol to the network assigned to NETWORK environment variable and write the deployed address to ./utils/addresses.json.
+    This script deploys plonk_vk.sol to the network assigned to NETWORK environment variable and write the deployed address to `./utils/addresses.json`.
 
 
 4. **next build**
@@ -157,7 +158,7 @@ npm run dev
 
 Navigate to http://localhost:3000 on your web browser. Connect your MetaMask wallet to the dapp and switch your Metamask network to Localhost network. Then, provide two input values and click on the Calculate proof button. This will initiate the proof calculation and also verify onchain.
 
-Within the ./components directory, the components.tsx file contains two noteworthy functions that handles those actions:
+Within the `./components` directory, the `components.tsx` file contains two noteworthy functions that handles those actions:
 
 - calculateProof
 - verifyProof
@@ -197,7 +198,7 @@ const calculateProof = async () => {
 };
 ```
 
-It first checks if the input fields are not empty. If the input fields contain values, it proceeds to sending those inputs to the newly created worker and also calling onmessage function in ./utils/prover.ts file.
+It first checks if the input fields are not empty. If the input fields contain values, it proceeds to sending those inputs to the newly created worker and also calling onmessage function in `./utils/prover.ts` file.
 ```typescript
 // @ts-ignore
 import { NoirBrowser } from '../utils/noir/noirBrowser';
@@ -268,7 +269,7 @@ const verifyProof = async () => {
 };
 ```
 
-It first checks if there is a proof available for verification. If a proof exists, it launches a new worker. The proof is then sent to the worker, and the onmessage function in the ./utils/verifier.ts file is called to handle the incoming proof by calling barretenberg’s verify_proof function.
+It first checks if there is a proof available for verification. If a proof exists, it launches a new worker. The proof is then sent to the worker, and the onmessage function in the `./utils/verifier.ts` file is called to handle the incoming proof by calling barretenberg’s verify_proof function.
 
 ```typescript
 async verifyProof({proof} : {proof: any}) {
