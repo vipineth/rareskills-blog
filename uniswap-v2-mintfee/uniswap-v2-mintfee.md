@@ -105,3 +105,5 @@ It's easier to see the logic in a decision tree, so here is the decision tree wi
 
 ## Learn more with RareSkills
 Please see our [blockchain bootcamp](https://www.rareskills.io/web3-blockchain-bootcamps) to see our course offerings.
+
+*Originally Published November 14, 2023*
