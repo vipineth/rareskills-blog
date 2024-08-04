@@ -303,8 +303,6 @@ contract ChildContract is ParentContract {
 }
 ```
 
-[solidity-event-inheritance.md](https://gist.github.com/RareSkills/383907606b07ff4a36c630fbe34b2e1c#file-solidity-event-inheritance-md) hosted with ❤ by [GitHub](https://github.com) | [view raw](https://gist.github.com/RareSkills/383907606b07ff4a36c630fbe34b2e1c/raw/c823d5a3d3d542ee8fcec93fb63b8fb6930c4e02/solidity-event-inheritance.md)
-
 Similarly, events can be declared in an interface and used in the child, as in the following example.
 
 ```solidity
