@@ -33,7 +33,7 @@ There is nothing in the EVM specification that says the layout must be init code
 
 This article assumes knowledge of the following topics:
 - Solidity (See our [free solidity tutorial](https://www.rareskills.io/learn-solidity) if you are just starting.).
-- Basics of EVM opcodes (A good place to start is the evm codes)
+- Basics of EVM opcodes
 
 Let's dive in!
 
