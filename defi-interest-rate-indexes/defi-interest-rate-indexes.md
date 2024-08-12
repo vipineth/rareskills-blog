@@ -121,7 +121,7 @@ Similar to how `baseSupplyIndex` tracks the gain in one dollar lent since the b
 
 ## When will the indexes overflow?
 
-Both baseSupplyIndex and baseBorrowIndex are treated as fixed point numbers with 15 decimals, so 1e15 is treated as 1.0. The largest number a signed 104 bit number can hold is 1.014e31. Therefore, the largest number the accumulator can hold is 1.014e16 (with 15 decimals).
+Both baseSupplyIndex and baseBorrowIndex are treated as [fixed point numbers](https://www.rareskills.io/post/solidity-fixed-point) with 15 decimals, so 1e15 is treated as 1.0. The largest number a signed 104 bit number can hold is 1.014e31. Therefore, the largest number the accumulator can hold is 1.014e16 (with 15 decimals).
 
 Let’s assume that the lending protocol will never be over 100% APR. It would take 53 years for the index to overflow. Using a more realistic 10% interest rate, it would take 386 years for one dollar to compound to 10 trillion dollars.
 

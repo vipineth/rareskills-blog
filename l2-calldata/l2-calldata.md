@@ -10,7 +10,7 @@ This article explores how calldata optimization works, provide some examples, an
 
 -   The reader should be familiar with Solidity and Ethereum Virtual Environment (EVM).
 -   The reader should at least know some simple [gas optimization](https://www.rareskills.io/post/gas-optimization) techniques.
--   The reader should know what ABI encoding/decoding, this [video on ABI encoding](https://youtu.be/upVloLUw5Z0?si=Dc7IKc5sffOMbvHI) is a good starting point to learn.
+-   The reader should know what ABI encoding/decoding, this [video on ABI encoding](https://www.rareskills.io/post/abi-encoding) is a good starting point to learn.
 
 ## Authorship
 

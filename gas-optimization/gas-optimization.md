@@ -1216,7 +1216,7 @@ contract MemoryContract {
 <a id="viewer-d5tb"></a>
 ### 4. Consider packing calldata, especially on an L2
 
-Solidity automatically packs storage variables, but the abi encoding for variables that would be packed in storage are not packed in calldata.
+Solidity automatically packs storage variables, but the [abi encoding](https://www.rareskills.io/post/abi-encoding) for variables that would be packed in storage are not packed in calldata.
 
 This is a rather extreme optimization that leads to higher code complexity, but it is something to consider if a function takes a lot of calldata.
 

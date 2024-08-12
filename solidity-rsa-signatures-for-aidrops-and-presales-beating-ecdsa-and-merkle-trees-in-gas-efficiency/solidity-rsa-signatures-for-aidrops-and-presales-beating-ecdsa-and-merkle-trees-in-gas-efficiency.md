@@ -98,7 +98,7 @@ Ethereum only supports 32 byte data types, so by default, we cannot carry out
 s ^ e % n
 ```
 
-Thankfully, the ethereum [blockchain](https://www.rareskills.io/web3-blockchain-bootcamps) added a precompiled contract in [EIP 198](https://eips.ethereum.org/EIPS/eip-198) specifically to support modular arithmetic. To use it, the base, exponent, and modulus must be loaded into memory in abi encoded format. Then the contract living at address 0x05 is invoked.
+Thankfully, the ethereum [blockchain](https://www.rareskills.io/web3-blockchain-bootcamps) added a precompiled contract in [EIP 198](https://eips.ethereum.org/EIPS/eip-198) specifically to support modular arithmetic. To use it, the base, exponent, and modulus must be loaded into memory in [abi encoded](https://www.rareskills.io/post/abi-encoding) format. Then the contract living at address 0x05 is invoked.
 
 Storing the public key becomes a bit of an issue if you use a secure amount of bits. If the key size is 1024 bits, that necessitates 4 storage slots. To read the public key out of storage would be four SLOAD operations, for a total of 8,400 gas. This by itself is already less efficient than the ECDSA solution benchmarked above.
 

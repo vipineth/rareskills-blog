@@ -38,7 +38,7 @@ contract Caller {
 }
 ```
 
-Every variable of type address, such as the <span style="color: Red;">calledAddress</span> variable, has a method named <span style="color: Red;">call</span>. This method expects as the parameter the input data to be executed in the transaction, that is, ABI encoded calldata. In the case mentioned above, the input data must correspond to the signature of the `increment()` function, with function selector `0xd09de08a`. We employ the abi.encodeWithSignature method to generate this signature from the function definition.
+Every variable of type address, such as the <span style="color: Red;">calledAddress</span> variable, has a method named <span style="color: Red;">call</span>. This method expects as the parameter the input data to be executed in the transaction, that is, [ABI encoded](https://www.rareskills.io/post/abi-encoding) calldata. In the case mentioned above, the input data must correspond to the signature of the `increment()` function, with function selector `0xd09de08a`. We employ the abi.encodeWithSignature method to generate this signature from the function definition.
 
 If you execute the `callIncrement` function in the `Caller` contract, you will observe that the state variable `number` in `Called` will increment by 1. The `call` method **does not verify whether the destination address actually corresponds to an existing contract, neither if it contains the specified function**.
 

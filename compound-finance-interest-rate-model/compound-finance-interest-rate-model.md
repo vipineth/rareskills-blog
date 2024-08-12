@@ -74,7 +74,7 @@ At the time of writing, the optimal utilization for USDC on Ethereum is 93% as s
 
 ![borrowKink and supplyKink](https://static.wixstatic.com/media/935a00_91cc8f63a275453cbc853bb361d90925~mv2.png/v1/fill/w_666,h_257,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/935a00_91cc8f63a275453cbc853bb361d90925~mv2.png)
 
-Because utilization is measured with an 18 decimal fixed point number, the borrowKink and supplyKink are measured with 18 decimal fixed point numbers also. The interest rate function directly compares the two as we will see in an upcoming next section.
+Because utilization is measured with an 18 decimal [fixed point number](https://www.rareskills.io/post/solidity-fixed-point), the borrowKink and supplyKink are measured with 18 decimal fixed point numbers also. The interest rate function directly compares the two as we will see in an upcoming next section.
 
 ### Step 4: mulFactor()
 

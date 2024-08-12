@@ -353,7 +353,7 @@ This is JUMPDEST 0x1c for the case where calldata was sent. The transaction reve
 
 ## Constructor with parameters
 
-Contracts with constructor arguments are encoded a little differently. The constructor parameters are expected to be appended at the end of the creation code (after the runtime code) and ABI encoded.
+Contracts with constructor arguments are encoded a little differently. The constructor parameters are expected to be appended at the end of the creation code (after the runtime code) and [ABI encoded](https://www.rareskills.io/post/abi-encoding).
 
 Solidity in particular adds an extra check to ensure the constructor parameter length is at least the length of the expected constructor arguments, else it reverts.
 

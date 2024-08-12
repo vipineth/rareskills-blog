@@ -90,7 +90,7 @@ Both of these variables use trackingIndexScale for their decimals, and [per Ethe
 
 ![trackingIndexScale](https://static.wixstatic.com/media/935a00_97f90b95459d4710b35dd8fc9cddc283~mv2.png/v1/fill/w_315,h_194,al_c,lg_1,q_85,enc_auto/935a00_97f90b95459d4710b35dd8fc9cddc283~mv2.png)
 
-Since they are 15 decimal fixed point numbers, their values are as follows:
+Since they are 15 decimal [fixed point numbers](https://www.rareskills.io/post/solidity-fixed-point), their values are as follows:
 
 baseTrackingSupplySpeed = 2.979166666666e-03
 

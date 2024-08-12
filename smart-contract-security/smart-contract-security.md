@@ -923,7 +923,7 @@ readPrivateVar();
 
 ## Try Catch is hard to get right
 
-Whereas a low-level call will simply return true or false based on success, a try catch makes a distinction between a panic and a revert, and may silently fail if the return data cannot be parsed properly. It's best to avoid it and simply use low level calls.
+Whereas a low-level call will simply return true or false based on success, a [try catch](https://www.rareskills.io/post/try-catch-solidity) makes a distinction between a panic and a revert, and may silently fail if the return data cannot be parsed properly. It's best to avoid it and simply use low level calls.
 
 ## Insecure Delegate Call
 
@@ -1491,7 +1491,7 @@ function kill(address _to) onlymanyowners(sha3(msg.data)) external {
 }
 ```
 
-Some literature describes this as an "unprotected selfdestruct" i.e. an access control failure, but this isn't quite accurate. The problem was that the initWallet function was not called on the implementation contract and that allowed someone to call the initWallet function themselves and make themselves the owner. That gave them the authority to call the kill function. The root cause was that the implementation was not initialized. Therefore, the bug was introduced not due to faulty solidity code, but due to a faulty deployment process.
+Some literature describes this as an "unprotected selfdestruct" i.e. an access control failure, but this isn't quite accurate. The problem was that the initWallet function was not called on the implementation contract and that allowed someone to call the initWallet function themselves and make themselves the owner. That gave them the authority to call the kill function. The root cause was that the [implementation was not initialized](https://www.rareskills.io/post/initializable-solidity). Therefore, the bug was introduced not due to faulty solidity code, but due to a faulty deployment process.
 
 ### Badger DAO Hack (December 2021)
 
