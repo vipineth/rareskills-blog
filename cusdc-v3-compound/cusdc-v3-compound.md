@@ -2,7 +2,7 @@
 
 The Compound V3 contract behaves like a rebasing ERC 20 token. A rebasing token is a token which has an algorithmically adjusted supply rather than a fixed one. The “token” here represents the present value of positive USDC balances. That is, lenders can transfer the present value of their principal to other addresses as if it were an ERC 20 token. Since the principal value is generally increasing due to interest accrual, this ERC 20 token is rebasing upwards over time.
 
-**Compound V3 does not use a token vault standard (e.g. ERC 4626) to track “shares” of the lending pool.**
+**Compound V3 does not use a token vault standard (e.g. [ERC-4626](https://www.rareskills.io/post/erc4626)) to track “shares” of the lending pool.**
 
 As we noted in our discussion of principal and present value, a user may have deposited 100 USDC but have a credit of 110 USDC due to interest accrued — the 110 is the present value. It is this unit of account that the ERC20 functionality of Compound V3 manages.
 

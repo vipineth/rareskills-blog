@@ -923,7 +923,7 @@ readPrivateVar();
 
 ## Try Catch is hard to get right
 
-Whereas a low-level call will simply return true or false based on success, a [try catch](https://www.rareskills.io/post/try-catch-solidity) makes a distinction between a panic and a revert, and may silently fail if the return data cannot be parsed properly. It's best to avoid it and simply use low level calls.
+Whereas a [low-level call](https://www.rareskills.io/post/low-level-call-solidity) will simply return true or false based on success, a [try catch](https://www.rareskills.io/post/try-catch-solidity) makes a distinction between a panic and a revert, and may silently fail if the return data cannot be parsed properly. It's best to avoid it and simply use low level calls.
 
 ## Insecure Delegate Call
 
