@@ -13,7 +13,7 @@ The problem with putting an additional function inside the proxy to change the i
 
 ## Function Selector Clashing
 
-Declaring public functions inside the proxy to update the implementation address introduces the possibility of a function selector clash.
+Declaring public functions inside the proxy to update the implementation address introduces the possibility of a [function selector](https://www.rareskills.io/post/function-selector) clash.
 
 Here is a trivial example:
 
@@ -44,7 +44,7 @@ contract Implementation {
 }
 ```
 
-**Remember, the fallback is always checked last.** Before the fallback is called, the Proxy contract will check if the 4 byte [function selector](https://www.rareskills.io/post/function-selector) matches `changeImplementation` (or any other public function in the proxy).
+**Remember, the fallback is always checked last.** Before the fallback is called, the Proxy contract will check if the 4 byte function selector matches `changeImplementation` (or any other public function in the proxy).
 
 Therefore, if a public function is declared in the proxy, there are two kinds of function selector clashes that can occur:
 

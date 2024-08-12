@@ -47,7 +47,7 @@ contract InternalFunctionHarness is InternalFunction {
 
 Changing the function to become public isn’t a good solution because this will increase the contract size. If a function doesn’t need to be public, then don’t make it public. It will increase the gas cost both for deployment, and the execution of the other functions.
 
-When a [contract](https://www.rareskills.io/post/smart-contract-creation-cost) receives a transaction, it must compare the function selector to all the public ones in a linear or binary search. In either case, it has more selectors to search through. Furthermore, the added selector is added bytecode which increases the deployment cost.
+When a [contract](https://www.rareskills.io/post/smart-contract-creation-cost) receives a transaction, it must compare the [function selector](https://www.rareskills.io/post/function-selector) to all the public ones in a linear or binary search. In either case, it has more selectors to search through. Furthermore, the added selector is added bytecode which increases the deployment cost.
 
 ## Don’t override virtual functions
 

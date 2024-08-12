@@ -6,7 +6,7 @@ Suppose we have functions `foo()` and `bar()` in our **primary** contract and wi
 
 We add a fallback function to our **primary** smart contract that delegates unknown function calls to an _extension_ contract similar to how a proxy works.
 
-We put `baz()` in the _extension_ contract. When we call `baz()` on the main contract, it will not match any of the function selectors in the **primary** contract, and the thus trigger the fallback function. Then, `baz()` will be [delegatecalled](https://www.rareskills.io/post/delegatecall) in the **_extension_** contract.
+We put `baz()` in the _extension_ contract. When we call `baz()` on the main contract, it will not match any of the [function selectors](https://www.rareskills.io/post/function-selector) in the **primary** contract, and the thus trigger the fallback function. Then, `baz()` will be [delegatecalled](https://www.rareskills.io/post/delegatecall) in the **_extension_** contract.
 
 ## Ensuring an identical storage layout
 
