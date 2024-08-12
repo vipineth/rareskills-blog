@@ -2,7 +2,7 @@
 
 To test an internal solidity function, create a child contract that inherits from the contract being tested, wrap the parent contract’s internal function with an external one, then test the external function in the child.
 
-Foundry calls this inheriting contract a "harness" though others call it a "fixture."
+[Foundry](https://www.rareskills.io/post/foundry-testing-solidity) calls this inheriting contract a "harness" though others call it a "fixture."
 
 Don’t change the function to become virtual or public to make it easier to extend, you want to test the contract you will actually deploy.
 

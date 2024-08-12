@@ -1063,7 +1063,7 @@ When calling clones or proxies which always involve a cross-contract call via `d
 We have a dedicated blog post on this, visit https://www.rareskills.io/post/eip-2930-optional-access-list-ethereum to learn more.
 
 <a id="viewer-8j40c"></a>
-### 4. Cache calls to external contracts where it makes sense (like caching return data from chainlink oracle)
+### 4. Cache calls to external contracts where it makes sense (like caching return data from [chainlink oracle](https://www.rareskills.io/post/chainlink-price-feed-contract))
 
 Caching data is generally recommended to avoid duplication in memory when you want to use the same data > 1 times during a single execution process.
 

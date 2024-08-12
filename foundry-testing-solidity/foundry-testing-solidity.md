@@ -717,7 +717,7 @@ If you are testing withdrawing Ether from the contract, it will be sent to the c
 
 ### Not having an onERC...Received when receiving tokens
 
-By the same token (pun intended), ERC721 `safeTransferFrom` and ERC1155 `transferFrom` revert when sending tokens to a smart contract that doesn't have the appropriate transfer hook function. You'll need to add that to your tests if you want to test transferring NFTs (or ERC777-like tokens) to yourself.
+By the same token (pun intended), [ERC-721](https://www.rareskills.io/post/erc721) `safeTransferFrom` and ERC-1155 `transferFrom` revert when sending tokens to a smart contract that doesn't have the appropriate transfer hook function. You'll need to add that to your tests if you want to test transferring NFTs (or ERC777-like tokens) to yourself.
 
 ## Summary
 - aim for 100% line and branch coverage

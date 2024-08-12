@@ -22,7 +22,7 @@ It is important that the bugs be syntactically valid, i.e. still result in compi
 
 ## Line Coverage Without Testing
 
-Let's use the default example foundry provides after running `forge init` and comment out the assert statements.
+Let's use the default example [Foundry](https://www.rareskills.io/post/foundry-testing-solidity) provides after running `forge init` and comment out the assert statements.
 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED

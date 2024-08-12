@@ -81,7 +81,7 @@ If a token is transferred to a smart contract that does not have the functionali
 
 As such, some token standards take steps to prevent this from happening.
 
-The ERC-721 with the `safeTransferFrom` function for example will check if the address being transferred to is a smart contract (using the `code.length` trick).
+The [ERC-721](https://www.rareskills.io/post/erc721) with the `safeTransferFrom` function for example will check if the address being transferred to is a smart contract (using the `code.length` trick).
 
 ![A code snippet of the checkOnERC721Received function highlighting the code.length if statement](https://static.wixstatic.com/media/706568_55ba9c2653f8419a83912b74f96dc4fc~mv2.png/v1/fill/w_592,h_372,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/706568_55ba9c2653f8419a83912b74f96dc4fc~mv2.png)
 

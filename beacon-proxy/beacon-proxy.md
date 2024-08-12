@@ -217,7 +217,7 @@ And that's all the contracts needed to design a beacon pattern:
 
 Ok but how do we deploy this whole system? It's not as scary as it may seem.
 
-OpenZeppelin offers an [Upgrades](https://docs.openzeppelin.com/upgrades-plugins/1.x/) plugin for both Hardhat and Foundry. It's as simple as installing the library and just calling `deployBeacon()` with the parameters for the beacon contract. From there, BeaconProxies can be deployed by calling `deployBeaconProxy()`. Upgrading is similar: the `upgradeBeacon()` function is called with the parameters for the new implementation.
+OpenZeppelin offers an [Upgrades](https://docs.openzeppelin.com/upgrades-plugins/1.x/) plugin for both Hardhat and [Foundry](https://www.rareskills.io/post/foundry-testing-solidity). It's as simple as installing the library and just calling `deployBeacon()` with the parameters for the beacon contract. From there, BeaconProxies can be deployed by calling `deployBeaconProxy()`. Upgrading is similar: the `upgradeBeacon()` function is called with the parameters for the new implementation.
 
 The system can also be deployed manually:
 
