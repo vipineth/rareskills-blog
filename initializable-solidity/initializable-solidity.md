@@ -20,7 +20,7 @@ is not a good solution because it is error prone to align the storage variable l
 
 ## How initializers work
 
-The solution to all of the problems above is to create an `initializer()` function in the implementation which sets the storage variables in the same manner a constructor would and have the proxy delegatecall `initialize()` the implementation. Putting the `initializer()` in the implementation ensures that the storage variable alignment will be automatically correct. **To mimic a constructor, it is crucial that this function can only be delegatecalled once by the proxy.**
+The solution to all of the problems above is to create an `initializer()` function in the implementation which sets the storage variables in the same manner a constructor would and have the proxy [delegatecall](https://www.rareskills.io/post/delegatecall) `initialize()` the implementation. Putting the `initializer()` in the implementation ensures that the storage variable alignment will be automatically correct. **To mimic a constructor, it is crucial that this function can only be delegatecalled once by the proxy.**
 
 The purpose of OpenZeppelin's [`Initializable.sol`](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/proxy/utils/Initializable.sol) contract is to provide a robust implementation of this initialization pattern. Currently, `Initializable.sol` is used in OpenZeppelin's upgradable contracts, such as `ERC20Upgradeable.sol`.
 

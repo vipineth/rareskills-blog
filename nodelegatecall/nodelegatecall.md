@@ -1,6 +1,6 @@
 # Nodelegatecall Explained
 
-The `nodelegatecall` modifier prevents delegatecalls from being sent to a contract. We will first show the mechanism for how to accomplish this then later discuss the motivation for why one might do this.
+The `nodelegatecall` modifier prevents [delegatecalls](https://www.rareskills.io/post/delegatecall) from being sent to a contract. We will first show the mechanism for how to accomplish this then later discuss the motivation for why one might do this.
 
 Below, we've simplified the `nodelegatecall` modifier originally created by [Uniswap V3's noDelegateCall](https://github.com/Uniswap/v3-core/blob/d8b1c635c275d2a9450bd6a78f3fa2484fef73eb/contracts/NoDelegateCall.sol#L4):
 

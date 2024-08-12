@@ -137,7 +137,7 @@ function pairFor(address factory, address tokenA, address tokenB) internal pure 
 
 ### Why not use clones
 
-The [EIP 1167 clone](https://www.rareskills.io/post/eip-1167-minimal-proxy-standard-with-initialization-clone-pattern) pattern is used to create a collection of similar contracts, so why not use that here? Although the deployment would be cheaper, it would introduce an extra 2,600 gas per transaction due to the delegatecall. Since pools are intended to be used frequently, the cost savings from deployment would eventually be lost after a few hundred transactions, so it is worth deploying a pool as a new contract.
+The [EIP 1167 clone](https://www.rareskills.io/post/eip-1167-minimal-proxy-standard-with-initialization-clone-pattern) pattern is used to create a collection of similar contracts, so why not use that here? Although the deployment would be cheaper, it would introduce an extra 2,600 gas per transaction due to the [delegatecall](https://www.rareskills.io/post/delegatecall). Since pools are intended to be used frequently, the cost savings from deployment would eventually be lost after a few hundred transactions, so it is worth deploying a pool as a new contract.
 
 ## Practice Problems
 

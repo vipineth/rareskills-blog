@@ -117,7 +117,7 @@ After the transaction calldata is copied to memory, the stack is prepared to mak
 
 After copying the transaction calldata to memory and getting the implementation contract address at the top of the stack, the minimal proxy is ready to perform a delegatecall to the implementation contract.
 
-If you need a refresher on how delegatecall works, read the solidity docs on [delegatecall](https://docs.soliditylang.org/en/v0.8.6/introduction-to-smart-contracts.html?highlight=delegatecall#delegatecall-callcode-and-libraries).
+If you need a refresher on how delegatecall works, read the our tutorial on [delegatecall](https://docs.soliditylang.org/en/v0.8.6/introduction-to-smart-contracts.html?highlight=delegatecall#delegatecall-callcode-and-libraries).
 
 After the delegate call is performed, the minimal proxy returns the result of the call if it was successful or reverts if an error had occurred.
 

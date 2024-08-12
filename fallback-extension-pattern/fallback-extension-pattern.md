@@ -6,7 +6,7 @@ Suppose we have functions `foo()` and `bar()` in our **primary** contract and wi
 
 We add a fallback function to our **primary** smart contract that delegates unknown function calls to an _extension_ contract similar to how a proxy works.
 
-We put `baz()` in the _extension_ contract. When we call `baz()` on the main contract, it will not match any of the function selectors in the **primary** contract, and the thus trigger the fallback function. Then, `baz()` will be delegatecalled in the **_extension_** contract.
+We put `baz()` in the _extension_ contract. When we call `baz()` on the main contract, it will not match any of the function selectors in the **primary** contract, and the thus trigger the fallback function. Then, `baz()` will be [delegatecalled](https://www.rareskills.io/post/delegatecall) in the **_extension_** contract.
 
 ## Ensuring an identical storage layout
 
@@ -28,7 +28,7 @@ There is an approximately 1 in 4 million chance two random functions will have t
 
 The extension itself can follow this pattern and send it to another delegate. In fact, there is no in-principal limit to how many times we do this.
 
-However, each “hop” adds an extra 2,600 gas (the minimum gas required to issue a CALL or [DELEGATECALL](https://www.rareskills.io/post/delegatecall) to a new address), so the cost can be substantial if the chain is long.
+However, each “hop” adds an extra 2,600 gas (the minimum gas required to issue a `CALL` or `DELEGATECALL` to a new address), so the cost can be substantial if the chain is long.
 
 Because functions in the extension cost an extra 2,600 gas, we want to put rarely-used functions in the extension, or functions that are intended to be mostly called from off-chain where gas doesn’t matter.
 

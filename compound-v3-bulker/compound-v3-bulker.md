@@ -24,7 +24,7 @@ The bulker does not behave like a traditional multicall where it accepts a list 
 
 Invoke will loop through the actions and call Comet (or the rewards contract) with the arguments supplied.
 
-Although it could have been more gas efficient to put this code into the main contract, using msg.value in a loop, especially when invoking delegatecall, is not safe. See the practice problem at the end of this article.
+Although it could have been more gas efficient to put this code into the main contract, using msg.value in a loop, especially when invoking [delegatecall](https://www.rareskills.io/post/delegatecall), is not safe. See the practice problem at the end of this article.
 
 Compound is careful to make sure msg.value is deducted rather than re-used, which could lead to double spending — see the <span style="color:#c1c146">yellow boxes</span>.
 

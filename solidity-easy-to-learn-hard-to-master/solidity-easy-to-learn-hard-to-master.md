@@ -7,7 +7,7 @@ It looks very similar to javascript, or pretty much any curly bracket language d
 
 If statements, for loops, class inheritance, variable types, are all very familiar.
 
-Solidity does have some oddities unique to moving cryptocurrency around. For example, each function call has an environment variable that indicates how much ether was sent with the function call and it has some specific APIs for interacting with other smart contracts. Solidity also has strange instructions like delegatecall and selfdestruct which are not found other languages, but those are easy to grasp after mulling over the documentation for a bit.
+Solidity does have some oddities unique to moving cryptocurrency around. For example, each function call has an environment variable that indicates how much ether was sent with the function call and it has some specific APIs for interacting with other smart contracts. Solidity also has strange instructions like [delegatecall](https://www.rareskills.io/post/delegatecall) and selfdestruct which are not found other languages, but those are easy to grasp after mulling over the documentation for a bit.
 
 However, Solidity and ethereum development can be full of surprises. Here are just three examples.
 

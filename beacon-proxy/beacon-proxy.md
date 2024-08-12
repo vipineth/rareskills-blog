@@ -41,7 +41,7 @@ Like the name suggests, this standard requires a beacon, which OpenZeppelin refe
 
 **The beacon is a smart contract that provides the current implementation address to the proxies via a public function.** The beacon is the source of truth for the proxies regarding the current implementation address, which is why it is called a "beacon".
 
-When a proxy receives an incoming transaction, the proxy first calls the `view` function `implementation()` on the beacon to fetch the current implementation address, and then the proxy `delegatecalls` to that address. This is what allows the beacon to function as the source of truth to where the implementation is.
+When a proxy receives an incoming transaction, the proxy first calls the `view` function `implementation()` on the beacon to fetch the current implementation address, and then the proxy [delegatecalls](https://www.rareskills.io/post/delegatecall) to that address. This is what allows the beacon to function as the source of truth to where the implementation is.
 
 ![Beacon Proxy  step-by-step  delegatecall architecture](https://static.wixstatic.com/media/706568_8eb5ae7b2db340b78b743dfcf67ce4e4~mv2.png/v1/fill/w_740,h_494,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/706568_8eb5ae7b2db340b78b743dfcf67ce4e4~mv2.png)
 

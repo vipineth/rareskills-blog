@@ -125,7 +125,7 @@ As the name implies, [CometMainInterface.sol](https://github.com/compound-financ
 
 [Comet.sol](https://github.com/compound-finance/comet/blob/main/contracts/Comet.sol) is the star of the show. It provides all the public facing functions for users to lend, borrow, repay, and liquidate loans.
 
-### CometExt is an extension to Comet via delegatecall
+### CometExt is an extension to Comet via [delegatecall](https://www.rareskills.io/post/delegatecall)
 
 To avoid hitting the 24kb deployment limit, Comet offloads several extra functions to CometExt using the [fallback-extension pattern](https://www.rareskills.io/post/fallback-extension-pattern). For example, the function `name()` is not in Comet.sol and thus [cannot be seen on Etherscan](https://etherscan.io/address/0xc3d688B66703497DAA19211EEdff47f25384cdc3#readProxyContract).
 

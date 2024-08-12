@@ -92,7 +92,7 @@ The opcode for the `gasleft()` function is GAS (bytecode 0x5A), which costs **"2
 
 The `gasleft()` function can also be accessed in Solidity smart contracts via yul (inline assembly), as `gas()`.
 
-The OpenZeppelin proxy contract is an excellent example of how this is done. It is used in the "`delegatecall`" function which the proxy uses to call the implementation contract. `gas()` is a convenient way to specify using the maximum available gas for this operation.
+The OpenZeppelin proxy contract is an excellent example of how this is done. It is used in the "[delegatecall](https://www.rareskills.io/post/delegatecall)" function which the proxy uses to call the implementation contract. `gas()` is a convenient way to specify using the maximum available gas for this operation.
 
 ![forward all gas in delegate call with gasleft solidity](https://static.wixstatic.com/media/935a00_86d5e55ebba74b2b9fd38ad973133d53~mv2.png/v1/fill/w_740,h_459,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/935a00_86d5e55ebba74b2b9fd38ad973133d53~mv2.png)  
 forward all gas in delegate call with gasleft solidity

@@ -927,7 +927,7 @@ Whereas a low-level call will simply return true or false based on success, a [t
 
 ## Insecure Delegate Call
 
-Delegatecall should never be used with untrusted contracts as it hands over all control to the delegatecallee. In this example, the untrusted contract steals all the ether in the contract.
+[Delegatecall](https://www.rareskills.io/post/delegatecall) should never be used with untrusted contracts as it hands over all control to the delegatecallee. In this example, the untrusted contract steals all the ether in the contract.
 
 ```solidity
 contract UntrustedDelegateCall {
