@@ -146,7 +146,7 @@ The OpenZeppelin Transparent Upgradeable Proxy implements the standard with thre
     
 ### Parentmost contract: Proxy.sol
 
-The base contract is [Proxy.sol](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/proxy/Proxy.sol). Given an implementation address, it sends a delegatecall to the implementation. The `_implementation()` function is not implemented in `Proxy` — it is overriden and implemented by its child `ERC1967Proxy` which will make it return the relevant storage slot.
+The base contract is [Proxy.sol](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/proxy/Proxy.sol). Given an implementation address, it sends a delegatecall to the implementation. The `_implementation()` function is not implemented in `Proxy` — it is overridden and implemented by its child `ERC1967Proxy` which will make it return the relevant storage slot.
 
 ```solidity
 abstract contract Proxy {
