@@ -169,7 +169,7 @@ The GIF below shows how the Configuration smart contract is structured and how g
 
 ![An image of Configuration smart contract structure](https://static.wixstatic.com/media/935a00_699ec73b9eb147898b1f6a45c7483232~mv2.gif)
 
-## CometConfiguration.sol and CometStorage.sol
+## CometConfiguration.sol and ConfiguratorStorage.sol
 
 CometConfiguration.sol defines the struct which parameterize the entire behavior of Comet. CometStorage simply stores those structs.
 
