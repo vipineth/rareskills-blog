@@ -49,6 +49,16 @@ We can set optional configuration values for our invariant test inside the found
 - depth: The number of calls executed to attempt to break invariants in one run (default value is 15).
 - `fail_on_revert`: Fails the invariant fuzzing if a revert occurs (default value is false.)
 
+An example config in `foundry.toml` would look like:
+
+```toml
+[invariant]
+runs = 1000
+depth = 1000
+```
+
+Alternatively, these parameters can be set in environment variables, for example `FOUNDRY_INVARIANT_RUNS=10000`.
+
 ## A simple example
 
 Now rename the `Counter.sol` that comes with foundry to `Deposit.sol` and paste this code.
