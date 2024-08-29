@@ -231,7 +231,7 @@ The fixed point number is stored in a `uint224` which is twice the size of the `
 
 This "encode" operation is easier to visualize with smaller uint sizes. Let's use a hypothetical fixed-point number with a $2^8$ denominator. Below, we show what happens when we encode a `uint8` to a fixed point number with a $2^8$ denominator:
 
-<video src="https://video.wixstatic.com/video/706568_91fa05a2c70a479a9846b50f7cb946de/1080p/mp4/file.mp4" type="video/mp4" controls></video>
+<video src="https://video.wixstatic.com/video/706568_91fa05a2c70a479a9846b50f7cb946de/1080p/mp4/file.mp4" type="video/mp4" autoplay loop muted controls></video>
 
 Starting with the number 125 which has binary representation `01111101`, if we multiply it by $2^8$, the product is 32000, which when stored in a 16 bit uint is represented as `0111110100000000`. Note that multiplying 125 by $2^8$ has the same effect as shifting left by 8 bits.
 

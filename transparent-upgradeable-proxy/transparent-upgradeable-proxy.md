@@ -248,7 +248,7 @@ Recall, the `ProxyAdmin` is making an interface call to `upgradeToAndCall` in th
 
 Below is a video showing all three code blocks side by side and how the different contracts in the inheritance chain (`Proxy`, `ERC1967Proxy`, and `TransparentUpgradeableProxy`) interact with each other:
 
-<video src="https://video.wixstatic.com/video/706568_5ea96919975f40eea2ca1667881e32f6/1080p/mp4/file.mp4" type="video/mp4" controls=""></video>
+<video src="https://video.wixstatic.com/video/706568_5ea96919975f40eea2ca1667881e32f6/1080p/mp4/file.mp4" type="video/mp4" autoplay loop muted controls></video>
 
 ## Why `upgradeToAndCall()` instead of just `upgradeTo()`?
 

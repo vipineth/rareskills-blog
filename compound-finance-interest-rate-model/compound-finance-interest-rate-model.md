@@ -28,7 +28,7 @@ Indeed, we can verify this by looking at the [Compound market for USDC on Ethere
 
 If you hover over the “Interest Rate Model” for various utilization levels, you can see what the expected supply and borrow interest is. The frontend doesn’t allow you to hover over 0% utilization. However, you can see the interest changes by approximately 0.03% for each 1% change in utilization, so the expected interest at 0% utilization will be 1%. See the animation below.
 
-<video src="https://video.wixstatic.com/video/935a00_55e442851a944be5bcd240912ff1fe5e/480p/mp4/file.mp4" style="width: 100%; height: 100%;" preload="auto" controls=""></video>
+<video src="https://video.wixstatic.com/video/935a00_55e442851a944be5bcd240912ff1fe5e/480p/mp4/file.mp4" style="width: 100%; height: 100%;" autoplay loop muted controls></video>
 
 Therefore, we can see the y intercept is indeed 1% per year.
 

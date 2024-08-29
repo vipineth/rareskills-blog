@@ -26,7 +26,7 @@ There are three major actions that can be taken with Compound V3:
 
 The following video shows the actions for lending USDC on the Polygon network ([USDC on Polygon market link](https://app.compound.finance/?market=usdc.e-polygon)).
 
-<video src="https://video.wixstatic.com/video/935a00_8728e7e7504a44be895a26c450693ac9/480p/mp4/file.mp4" style="width: 100%; height: 100%;" preload="auto" controls=""></video>
+<video src="https://video.wixstatic.com/video/935a00_8728e7e7504a44be895a26c450693ac9/480p/mp4/file.mp4" style="width: 100%; height: 100%;" autoplay loop muted controls></video>
 
 People who participate in the protocol are awarded COMP token rewards. The account above has accrued 0.0004 COMP rewards so far as indicated by the <span style="color:Pink">pink arrow</span>. The rewards have not been claimed yet. Additionally, it has accrued over 6 cents in interest so far (4,602.0649 - 4,602.00 = 0.0649).
 
@@ -40,7 +40,7 @@ The mismatch between the prices in the <span style="color:Green">green box</span
 
 The following video shows the procedure for borrowing. This time the account supplied 0.06 ETH ($110) as collateral and borrowed $100 of USDC. This was done on the [BASE L2 lending market](https://app.compound.finance/?market=usdbc-basemainnet).
 
-<video src="https://video.wixstatic.com/video/935a00_ac5f26fe0dae4bd0b666dbb0ea005153/480p/mp4/file.mp4" style="width: 100%; height: 100%;" preload="auto" controls=""></video>
+<video src="https://video.wixstatic.com/video/935a00_ac5f26fe0dae4bd0b666dbb0ea005153/480p/mp4/file.mp4" style="width: 100%; height: 100%;" autoplay loop muted controls></video>
 
 Checking the browser wallet, the account now has 100 Base USDC in it. USDCbC is USDC bridged to Base.
 

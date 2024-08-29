@@ -44,7 +44,7 @@ If you execute the `callIncrement` function in the `Caller` contract, you will o
 
 The call transaction is visualized in the video below:
 
-<video src="https://video.wixstatic.com/video/706568_c1abfd87d5584f2fa60f6fa4c1c49569/1080p/mp4/file.mp4" type="video/mp4" controls=""></video>
+<video src="https://video.wixstatic.com/video/706568_c1abfd87d5584f2fa60f6fa4c1c49569/1080p/mp4/file.mp4" type="video/mp4" autoplay loop muted controls></video>
 
 ## Call returns a tuple
 
@@ -110,7 +110,7 @@ Having reviewed how to use the `call` method will help us form an idea about how
 
 One mental model is that it copies the code of the target smart contract and runs that code itself. The targeted smart contract is commonly referred to as the "implementation contract".
 
-<video src="https://video.wixstatic.com/video/706568_26ef426f46e5484b96d39397f88d26b4/1080p/mp4/file.mp4" type="video/mp4" controls=""></video>
+<video src="https://video.wixstatic.com/video/706568_26ef426f46e5484b96d39397f88d26b4/1080p/mp4/file.mp4" type="video/mp4" autoplay loop muted controls></video>
 
 Just like `call`, `delegatecall` also has the input data to be executed by the target contract as a parameter.
 
@@ -184,7 +184,7 @@ If you deploy the provided contracts and execute the `callIncrement` function, s
 
 The following video illustrates this bug:
 
-<video src="https://video.wixstatic.com/video/706568_4b1accda1bc44865822efef9df65dc2e/1080p/mp4/file.mp4" type="video/mp4" controls=""></video>
+<video src="https://video.wixstatic.com/video/706568_4b1accda1bc44865822efef9df65dc2e/1080p/mp4/file.mp4" type="video/mp4" autoplay loop muted controls></video>
 
 Let's illustrate what happened below.
 
@@ -515,7 +515,7 @@ A diagram depicting this flow is presented below.
 
 Remember, all delegatecall does is borrow the bytecode of the delegatecalled contract. One way to visualize this is that the bytecode is temporarily "absorbed" into the calling contract. When we look at it that way, we see msg.sender is always the original msg.sender as everything is happening inside Caller. See the animation below:
 
-<video src="https://video.wixstatic.com/video/706568_c3578d63394d4ddab30f8d64edfc4d90/1080p/mp4/file.mp4" type="video/mp4" controls=""></video>
+<video src="https://video.wixstatic.com/video/706568_c3578d63394d4ddab30f8d64edfc4d90/1080p/mp4/file.mp4" type="video/mp4" autoplay loop muted controls></video>
 
 Below we provide some source code to test the concept of a delegatecall to a delegatecall:
 
@@ -582,7 +582,7 @@ contract CalledFirst {
 
 The question arises: What will be the **`msg.sender`** logged in the `SenderAtCalledLast` event? The following animation illustrates what happens:
 
-<video src="https://video.wixstatic.com/video/706568_e72fbb2695704770bccd46f118b72ba5/1080p/mp4/file.mp4" type="video/mp4" controls=""></video>
+<video src="https://video.wixstatic.com/video/706568_e72fbb2695704770bccd46f118b72ba5/1080p/mp4/file.mp4" type="video/mp4" autoplay loop muted controls></video>
 
 ![the msg.sender output when a contract is being called by another contract using delegatecall().](https://static.wixstatic.com/media/706568_290a68fb64d547909f8326251868e002~mv2.png/v1/fill/w_511,h_207,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/706568_290a68fb64d547909f8326251868e002~mv2.png)
 

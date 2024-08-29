@@ -28,7 +28,7 @@ The purpose of this article is to provide a detailed explanation of how Initiali
 
 A high level illustration of the initializer process is shown in the animation below:
 
-<video src="https://video.wixstatic.com/video/706568_60bc2f10e4d54c2194771dae0df99a37/1080p/mp4/file.mp4" type="video/mp4" controls>
+<video src="https://video.wixstatic.com/video/706568_60bc2f10e4d54c2194771dae0df99a37/1080p/mp4/file.mp4" type="video/mp4" autoplay loop muted controls>
 </video>
 
 ## A naïve Implementation
@@ -131,7 +131,7 @@ The `_initializing` variable is a boolean that indicates whether the contract is
 
 The video below illustrates how these parts work together:
 
-<video src="https://video.wixstatic.com/video/706568_ed24969c5dea40ee9d762eeeebc61c78/1080p/mp4/file.mp4" type="video/mp4" controls>
+<video src="https://video.wixstatic.com/video/706568_ed24969c5dea40ee9d762eeeebc61c78/1080p/mp4/file.mp4" type="video/mp4" autoplay loop muted controls>
 </video>
 
 ## The Initializer modifier

@@ -10,7 +10,7 @@ Since `ERC721Enumerable` is an extension of ERC721 , this article assumes that t
 
 Removing an item from an list in Solidity is typically done by copying the last element to the destination of the item that will be removed, then popping the array (deleting the last element). It's too expensive gas-wise to shift all the elements to the left. The operation to delete from a list is shown in the animation below, which removes the item at index 1 (number 5):
 
-<video src="https://video.wixstatic.com/video/935a00_0e88f0ef81d54484b6c0c2f58f16da3c/720p/mp4/file.mp4" style="width: 100%; height: 100%;" preload="auto" controls=""></video>
+<video src="https://video.wixstatic.com/video/935a00_0e88f0ef81d54484b6c0c2f58f16da3c/720p/mp4/file.mp4" style="width: 100%; height: 100%;" autoplay loop muted controls></video>
 
 ## Why ERC721Enumerable?
 

@@ -189,7 +189,7 @@ contract FunctionSignatureTest {
 
 Here is the [**code on Remix**](https://remix.ethereum.org/#code=Ly8gU1BEWC1MaWNlbnNlLUlkZW50aWZpZXI6IE1JVApwcmFnbWEgc29saWRpdHkgMC44LjI1OwoKY29udHJhY3QgRnVuY3Rpb25TaWduYXR1cmVUZXN0IHsKCiAgICBldmVudCBMb2dTZWxlY3RvcihieXRlczQpOwoKICAgIGZhbGxiYWNrKCkgZXh0ZXJuYWwgcGF5YWJsZSB7CiAgICAgICAgZW1pdCBMb2dTZWxlY3Rvcihtc2cuc2lnKTsKICAgIH0KfQ&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.25+commit.b61c2a91.js) to test the above contract. Below is a video showing how to trigger the fallback function on Remix:
 
-<video src="https://video.wixstatic.com/video/706568_e6a59aac2cb04bad8146e0f232de73d7/720p/mp4/file.mp4" style="width: 100%; height: 100%;" preload="auto" controls=""></video>  
+<video src="https://video.wixstatic.com/video/706568_e6a59aac2cb04bad8146e0f232de73d7/720p/mp4/file.mp4" style="width: 100%; height: 100%;" autoplay loop muted controls></video>  
 
 ## Probability of a function selector collision
 

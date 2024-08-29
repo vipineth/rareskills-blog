@@ -371,7 +371,7 @@ function readSlotX() external view returns (uint256 value) {
     
 The animation below visualizes how the `sload` opcode functions.
 
-<video src="https://video.wixstatic.com/video/706568_665a627d4bce4eb1bfb7a340f059937a/1080p/mp4/file.mp4" type="video/mp4" controls=""></video>
+<video src="https://video.wixstatic.com/video/706568_665a627d4bce4eb1bfb7a340f059937a/1080p/mp4/file.mp4" type="video/mp4" autoplay loop muted controls></video>
 
 The function `sloadOpcode(slotNumber)` allows us to read the value of any arbitrary storage slot. It then returns the value in uint256 format.
 
@@ -467,7 +467,7 @@ contract WriteStorage {
 
 `sstore_x(newVal)` directly updates the value stored in the storage slot that `x` references, effectively changing the value of `x`. The animation below visualizes what happens when we call the opcode `sstore_x(88)`.
 
-<video src="https://video.wixstatic.com/video/706568_c3a727877521411a97f6233fdb0a531e/1080p/mp4/file.mp4" type="video/mp4" controls=""></video>
+<video src="https://video.wixstatic.com/video/706568_c3a727877521411a97f6233fdb0a531e/1080p/mp4/file.mp4" type="video/mp4" autoplay loop muted controls></video>
 
 Both `sstore_x(newVal)` and `set_x()` perform the same function: They update the value of `x` with a new value.
 

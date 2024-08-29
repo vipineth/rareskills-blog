@@ -291,7 +291,7 @@ This completes our discussion of the calldata of this ABI encoding.
 
 The following video summarizes everything we learned about how to encode calldata for `transfer(uint[], address)`:
 
-<video src="https://video.wixstatic.com/video/706568_29bfe4ea94b94cf49a0bd42a0e4d9f44/1080p/mp4/file.mp4" type="video/mp4" controls=""></video>
+<video src="https://video.wixstatic.com/video/706568_29bfe4ea94b94cf49a0bd42a0e4d9f44/1080p/mp4/file.mp4" type="video/mp4" autoplay loop muted controls></video>
 
 ### ABI encoding a string argument
 
@@ -595,13 +595,13 @@ And that's how we convert the function `transfer([[123, 123], [123]], [0x5b38da6
 
 The following video summarizes the calldata from this section's example:
 
-<video src="https://video.wixstatic.com/video/706568_87da162471bf43169763c48738e89ee9/1080p/mp4/file.mp4" type="video/mp4" controls=""></video>
+<video src="https://video.wixstatic.com/video/706568_87da162471bf43169763c48738e89ee9/1080p/mp4/file.mp4" type="video/mp4" autoplay loop muted controls></video>
 
 ## A triple nested array animation
 
 Below we show a video demonstrating how a 3D uint array is ABI encoding: `f(uint[][][] memory data)`:
 
-<video src="https://video.wixstatic.com/video/706568_8fa44b44606645e29888a23532238b74/720p/mp4/file.mp4" type="video/mp4" controls="" ></video>
+<video src="https://video.wixstatic.com/video/706568_8fa44b44606645e29888a23532238b74/720p/mp4/file.mp4" type="video/mp4" autoplay loop muted controls></video>
 
 ## Calldata length and gas cost
 
