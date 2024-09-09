@@ -87,7 +87,7 @@ contract SelectorTest {
 
 ## Solidity function signature
 
-The function signature in Solidity is a string holding the name of the contract followed by the types of the arguments it accepts. The variable names are removed from the arguments.
+The function signature in Solidity is a string holding the name of the function followed by the types of the arguments it accepts. The variable names are removed from the arguments.
 
 In the following snippet, the function is on the left, and the function signature is on the right:
 
