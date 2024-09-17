@@ -88,13 +88,15 @@ Although the amount of stablecoins went up 10x, the amount of Ether went down. T
 
 Here is a table showing the relative performance of holding ETH and USD in a pool vs just holding them.
 
-|        | Ether Pool Balance | Stablecoin Pool Balance | ETH × Stablecoin | \$ value of 1 ETH | Value of assets if providing liquidity           | Value of just holding                                     |
-| ------ | ------------------ | ----------------------- | ---------------- | ---------------- | ------------------------------------------------ | --------------------------------------------------------- |
-| Before | 1                  | 10                      | 10               | 10               | $\$20 \; (\$10 \text{ ETH} + 10 \text{ USD})$    | $\$20 \; (\$10 \times 1 \text{ ETH} + 10 \text{ USD})$    |
-| After  | 0.1                | 100                     | 10               | 1000             | $\$200 \; (\$100 \text{ ETH} + 100 \text{ USD})$ | $\$1010 \;(\$1000 \times 1 \text{ ETH} + 10 \text{ USD})$ |
-| Gain   |                    |                         |                  |                  | $\$180$                                          | $\$990$                                                   |
-|        |                    |                         |                  |                  |                                                  |                                                           |
-
+<table>
+<tr><th></th><th>Ether Pool Balance</th><th>Stablecoin Pool Balance</th><th>ETH × Stablecoin</th><th>\$ value of 1 ETH</th><th>Value of assets if providing liquidity</th><th>Value of just holding</th><th></th></tr>
+<tr><td>Before</td><td>1</td><td>10</td><td>10</td><td>10</td><td>$\$20 \; (\$10 \text{ ETH} + 10 \text{ USD})$</td><td>$\$20 \; (\$10 \times 1 \text{ ETH} + 10 \text{ USD})$</td><td></td></tr>
+<tr><td>After</td><td>0.1</td><td>100</td><td>10</td><td>1000</td><td>$\$200 \; (\$100 \text{ ETH} + 100 \text{ USD})$</td><td>$\$1010 \;(\$1000 \times 1 \text{ ETH} + 10 \text{ USD})$</td><td></td></tr>
+<tr><td>Gain</td><td></td><td></td><td></td><td></td><td>$\$180$</td><td>$\$990$</td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr></tr>
+<tr></tr>
+</table>
 
 The missed out on gains are called "impermanent loss." In the table above, the impermanent loss is $\$810 = (\$990 - \$180)$.
 
