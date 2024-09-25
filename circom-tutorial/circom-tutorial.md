@@ -3,7 +3,7 @@
 This tutorial introduces the Circom language and how to use it, along with common pitfalls. We will also explain a significant portion of the circomlib library in order to introduce common design patterns.
 
 ## A note about production use
-Circom is a fantastic tool for learning ZK-SNARKS. However, because it is quite low-level, there are more opportunities to accidentally add subtle bugs. In real applications, programmers should consider using higher [level zero knowledge programming languages](https://www.rareskills.io/post/zero-knowledge-programming-language). You should always get an audit before deploying a smart contract that holds user funds, but this is especially true for [ZK circuits](rareskills.io/post/arithmetic-circuit), as the attack vectors are less well known.
+Circom is a fantastic tool for learning ZK-SNARKS. However, because it is quite low-level, there are more opportunities to accidentally add subtle bugs. In real applications, programmers should consider using higher [level zero knowledge programming languages](https://www.rareskills.io/post/zero-knowledge-programming-language). You should always get an audit before deploying a smart contract that holds user funds, but this is especially true for [ZK circuits](https://www.rareskills.io/post/arithmetic-circuit), as the attack vectors are less well known.
 
 ## Prerequisites
 Although it is possible to program in Circom without understanding what a [Rank 1 Constraint System](https://www.rareskills.io/post/rank-1-constraint-system) is, you will have a far easier time developing a mental model of the language if you do. Circom is essentially an ergonomic wrapper for creating Rank 1 Constraint Systems.
