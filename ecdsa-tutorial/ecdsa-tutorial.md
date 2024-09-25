@@ -55,7 +55,6 @@ The naive approach is to reveal the private key $p$ to the verifier so the verif
 
 Of course, this defeats the purpose of keeping $p$ private.
 
-
 ### Proving knowledge of the discrete log relationship between $P$ and $Q$
 Proving we know $p$ is equivalent to proving we know the discrete log relationship between the generator $G$ and the public key $P$. That is, $G$ is added to itself $p$ times to get $P$. Revealing the discrete log relationship between $G$ and $P$ reveals the private key.
 
