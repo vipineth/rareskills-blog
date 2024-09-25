@@ -10,7 +10,7 @@ In this article, we'll compare the two: why a low-level call never reverts, wher
 
 Before explaining why, let me quote the Solidity documentation that addresses this issue.
 
-> When exceptions happen in a sub-call, they “bubble up” (i.e., exceptions are rethrown) automatically unless they are caught in a [try/catch statement](https://www.rareskills.io/post/try-catch-solidity). Exceptions to this rule are send and the low-level functions call, [delegatecall](low-level-call-solidity/low-level-call-solidity.md) and [staticcall](https://www.rareskills.io/post/solidity-staticcall): they return false as their first return value in case of an exception instead of “bubbling up”.
+> When exceptions happen in a sub-call, they “bubble up” (i.e., exceptions are rethrown) automatically unless they are caught in a [try/catch statement](https://www.rareskills.io/post/try-catch-solidity). Exceptions to this rule are send and the low-level functions call, [delegatecalll](https://www.rareskills.io/post/delegatecall) and [staticcall](https://www.rareskills.io/post/solidity-staticcall): they return false as their first return value in case of an exception instead of “bubbling up”.
 
 Below we show both a high-level call and a low-level **`call`** to compare the behavior. I will employ the **`call`** method in the example below, but the same principles can be extended to **`delegatecall`**.
 
