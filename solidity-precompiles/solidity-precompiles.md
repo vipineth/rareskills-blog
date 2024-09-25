@@ -101,7 +101,7 @@ You can see an application for [RSA with solidity](https://www.rareskills.io/pos
 
 ## Address 0x06 and 0x07 and 0x08: ecAdd, ecMul, and ecPairing (EIP-196 and EIP-197)
 
-These precompiles are used to make [zero knowledge proof cryptography](https://www.rareskills.io/zk-book) more efficient. In fact, you can see all three precompiles being used in the [Tornado Cash](rareskills.io/post/how-does-tornado-cash-work) zero knowledge proof verifier:
+These precompiles are used to make [zero knowledge proof cryptography](https://www.rareskills.io/zk-book) more efficient. In fact, you can see all three precompiles being used in the [Tornado Cash](https://www.rareskills.io/post/how-does-tornado-cash-work) zero knowledge proof verifier:
 
 
 Elliptic Curve Addition: [staticcall to address(6)](https://github.com/tornadocash/tornado-core/blob/master/contracts/Verifier.sol#L79)
