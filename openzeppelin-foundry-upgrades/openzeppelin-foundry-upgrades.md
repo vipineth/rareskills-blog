@@ -4,7 +4,7 @@ Upgrading a smart contract is a multistep and error-prone process, so to minimiz
  
 Therefore, the [OpenZeppelin Upgrade Plugin](https://docs.openzeppelin.com/upgrades-plugins/) streamlines deploying, upgrading and managing smart contracts built with Foundry or Hardhat.
 
-In this article, we'll learn how to use Upgrade Plugin with [Foundry](rareskills.io/post/foundry-testing-solidity) to manage contract upgrades, both locally and on the Sepolia Testnet. We'll also cover how these plugins safeguard against common upgrade issues.
+In this article, we'll learn how to use Upgrade Plugin with [Foundry](https://www.rareskills.io/post/foundry-testing-solidity) to manage contract upgrades, both locally and on the Sepolia Testnet. We'll also cover how these plugins safeguard against common upgrade issues.
 
 ## Prerequisites
 
