@@ -115,8 +115,8 @@ Ecadd and ecMul were added in EIP-196 [EIP-196](https://eips.ethereum.org/EIPS/e
 
 You can learn how these precompiles work in our other tutorials:
 
-[Elliptic Curves in Finite Fields](rareskills.io/post/elliptic-curves-finite-fields)
-[Bilinear Pairings](rareskills.io/post/bilinear-pairing)
+[Elliptic Curves in Finite Fields](https://www.rareskills.io/post/elliptic-curves-finite-fields)
+[Bilinear Pairings](https://www.rareskills.io/post/bilinear-pairing)
 
 ### Gas Costs for ecAdd, ecMul, and ecPairing
 
