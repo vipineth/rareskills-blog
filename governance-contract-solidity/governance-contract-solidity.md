@@ -82,7 +82,7 @@ Here is what is new in Governor Bravo
 -   The governance contract becomes an upgradeable proxy pattern
 -   Voters can add a reason string to their votes
 
-In the OpenZeppelin Bravo implementation, the added field for “abstain” can be seen in the vote [struct](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/governance/compatibility/GovernorCompatibilityBravo.sol).
+In the OpenZeppelin Bravo implementation, the added field for “abstain” can be seen in the vote [struct](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.8/contracts/governance/compatibility/GovernorCompatibilityBravo.sol).
 
 ## An example workflow of executing a governance proposal
 
