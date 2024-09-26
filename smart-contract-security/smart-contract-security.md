@@ -19,7 +19,7 @@ Think of this guide as more of a reference. It isn't possible to discuss every c
 
 ## Prerequisites
 
-This article assumes basic proficiency in [Solidity](https://www.rareskills.io/solidity-bootcamp). If you are new to Solidity, please see our [free Solidity tutorial](https://rareskills.io/learn-solidity).
+This article assumes basic proficiency in [Solidity](https://www.rareskills.io/solidity-bootcamp). If you are new to Solidity, please see our [free Solidity tutorial](https://www.rareskills.io/learn-solidity).
 
 ## Reentrancy
 
@@ -1572,7 +1572,7 @@ Some reputable crowdsourced security firms have a useful list of past audits to 
 
 ## Becoming a smart contract auditor
 
-If you aren't fluent in Solidity, then there is no way you'll be able to [audit Ethereum smart contracts](https://www.rareskills.io/post/smart-contract-audit). See our [free Solidity tutorial](https://rareskills.io/learn-solidity) if you are just starting off.   
+If you aren't fluent in Solidity, then there is no way you'll be able to [audit Ethereum smart contracts](https://www.rareskills.io/post/smart-contract-audit). See our [free Solidity tutorial](https://www.rareskills.io/learn-solidity) if you are just starting off.   
 
 There is no industry recognized certification for becoming a smart contract auditor. Anyone can create a website and social media profiles claiming to be a solidity auditor and start selling services, and many have done so. Therefore, use caution and get referrals before hiring one.
 

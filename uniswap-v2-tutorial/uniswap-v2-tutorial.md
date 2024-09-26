@@ -147,6 +147,6 @@ It's easy to compute the amount of tokens required for a swap incorrectly, which
 
 ## Learn More with RareSkills
 
-This article is part of a series. Please see the [Uniswap V2 Book](https://rareskills.io/uniswap-v2-book) for the rest. Also see our [Blockchain Bootcamps](https://www.rareskills.io/web3-blockchain-bootcamps) for our other courses.
+This article is part of a series. Please see the [Uniswap V2 Book](https://www.rareskills.io/uniswap-v2-book) for the rest. Also see our [Blockchain Bootcamps](https://www.rareskills.io/web3-blockchain-bootcamps) for our other courses.
 
 *Originally Published Nov 15, 2023*
