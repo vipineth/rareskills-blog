@@ -145,9 +145,7 @@ $$
 This leads to a lot of cancellations
 
 $$
-
 =\frac{\cancel{\frac{D^{n+1}}{n^nP}}+\frac{nD^{n+1}}{n^nP}+\cancel{An^nD}-\cancel{D}-\cancel{\frac{D^{n+1}}{n^nP}}-\cancel{An^nD}+\cancel{D}+An^nS}{\frac{(n+1)\frac{D^{n+1}}{n^nP}+(An^n-1)D}{D}}\\
-
 $$
 
 $$
