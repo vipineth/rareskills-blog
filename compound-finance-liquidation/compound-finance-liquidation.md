@@ -217,6 +217,6 @@ Reserves are simply the money owed to the protocol plus the USDC balance of the 
 
 ## Learn More with RareSkills
 
-See our [blockchain bootcamp](https://rareskills.io/web3-blockchain-bootcamps) for advanced technical web3 courses.
+See our [blockchain bootcamp](https://www.rareskills.io/web3-blockchain-bootcamps) for advanced technical web3 courses.
 
 *Originally Published January 8, 2024*

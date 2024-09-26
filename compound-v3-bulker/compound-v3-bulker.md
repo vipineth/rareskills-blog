@@ -28,7 +28,7 @@ Although it could have been more gas efficient to put this code into the main co
 
 Compound is careful to make sure msg.value is deducted rather than re-used, which could lead to double spending — see the <span style="color:#c1c146">yellow boxes</span>.
 
-This arguably could have been [gas optimized](https://rareskills.io/post/gas-optimization) by having the actions decided with a 1 byte indicator rather than a 32 byte ascii string indicator.
+This arguably could have been [gas optimized](https://www.rareskills.io/post/gas-optimization) by having the actions decided with a 1 byte indicator rather than a 32 byte ascii string indicator.
 
 ## The bulkers are non-custodial
 
@@ -69,6 +69,6 @@ Bad things can happen when using `msg.value` inside a loop. See these two practi
 
 ## Learn More with RareSkills
 
-Please see our [web3 bootcamp](https://rareskills.io/web3-blockchain-bootcamps) to learn more.
+Please see our [web3 bootcamp](https://www.rareskills.io/web3-blockchain-bootcamps) to learn more.
 
 *Originally Published January 9, 2024*

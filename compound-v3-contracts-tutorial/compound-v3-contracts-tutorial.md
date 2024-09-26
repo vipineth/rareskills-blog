@@ -217,6 +217,6 @@ Below we show the relationship between all the files and how they interact with 
 
 ## Learn more with RareSkills
 
-Please see our [blockchain bootcamp](https://rareskills.io/web3-blockchain-bootcamps) to learn more.
+Please see our [blockchain bootcamp](https://www.rareskills.io/web3-blockchain-bootcamps) to learn more.
 
 *Originally Published January 3, 2024*

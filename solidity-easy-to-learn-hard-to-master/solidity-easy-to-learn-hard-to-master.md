@@ -55,7 +55,7 @@ As you can see above, a seemingly simple language can be full of surprises. We�
 
 Blockchain is full of unknown unknowns despite using a programming language that is “easy” to learn. This is why hacks are so common.
 
-Solidity can be grasped in a weekend. Here is our free tutorial to [learn solidity](https://rareskills.io/learn-solidity) quickly if you already know another programming language.
+Solidity can be grasped in a weekend. Here is our free tutorial to [learn solidity](https://www.rareskills.io/learn-solidity) quickly if you already know another programming language.
 
 But mastering the ecosystem does not happen in a matter of days.
 
