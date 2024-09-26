@@ -238,8 +238,6 @@ Mastering the fundamentals → learning from doing → revisiting the fundamenta
 
 It's okay to delay learning the foundational topics if you are still struggling to do the basic things in building functional applications. But don't get comfortable building functional applications because you will get stuck there if you don't master the fundamentals.
 
-If it means anything, our entry-level [Dapp Bootcamp](https://rareskills.io/dapp-bootcamp) is very application focused, but our [Advanced Solidity Bootcamp](https://www.rareskills.io/solidity-bootcamp) is foundations focused.
-
 Yes, there is such a thing as tutorial hell, and the solution to it is to take the plunge and build.
 
 But once you've gotten out of tutorial hell, the next step is not developing more applications but coding things that develops generalizable computer science skills.

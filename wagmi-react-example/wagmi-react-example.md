@@ -754,8 +754,4 @@ Your final website should look something like this:
 
 Congratulations! You’ve just made your own Decentralized Application that is capable of Sending Transactions and Minting an NFT.
 
-## Learn More
-
-This is used as teaching material for our [Dapp Bootcamp](https://www.rareskills.io/dapp-bootcamp).
-
 *Originally Published April 24, 2023*

@@ -851,10 +851,6 @@ Congratulations on finishing this tutorial! Your final product should look like 
 
 ![viem mint NFT](https://static.wixstatic.com/media/935a00_897b17a5855c4b0c8951b673e3e4d8e3~mv2.png/v1/fill/w_666,h_459,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/935a00_897b17a5855c4b0c8951b673e3e4d8e3~mv2.png)
 
-## Learn More
-
-This is used as teaching material for our [Dapp Bootcamp](https://www.rareskills.io/dapp-bootcamp).
-
 ### Authorship
 
 This article was co-authored by Aymeric Taylor ([LinkedIn](https://www.linkedin.com/in/aymeric-russel-taylor/), [X](https://twitter.com/TaylorAymeric)), a research intern at RareSkills.
