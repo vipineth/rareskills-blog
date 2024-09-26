@@ -173,7 +173,7 @@ We can’t cover every proposed variation of ERC20 here. The fact that ERC20 `tr
 
 This should also be a warning when interacting with untrusted ERC20 tokens. They might actually be one of these standards under the hood and be capable of triggering reentrancy.
 
-Here is the line where ERC777 calls the contract after transferring the tokens: [https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC777/ERC777.sol#L499](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC777/ERC777.sol#L499)
+Here is the line where ERC777 calls the contract after transferring the tokens: [https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.8/contracts/token/ERC777/ERC777.sol#L499](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.8/contracts/token/ERC777/ERC777.sol#L499)
 
 ```solidity
 function _callTokensReceived(
