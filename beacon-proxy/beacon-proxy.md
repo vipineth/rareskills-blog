@@ -232,14 +232,14 @@ The system can also be deployed manually:
 
 When would a beacon proxy be used in real life? I created a beacon proxy for Kwenta that's live on Optimism with 20M+ in TVL.
 
-The beacon proxy was for Kwenta vesting packages. A "vesting package" is a smart contract that slowly releases tokens (\$KWENTA) to special interests and core contributors of the protocol. Each person is given a vesting package which varies in token amounts and duration (usually 1-4 years). To learn more about vesting in crypto see [here](https://cointelegraph.com/explained/vesting-in-crypto-explained).
+The beacon proxy was for Kwenta vesting packages. A "vesting package" is a smart contract that slowly releases tokens (KWENTA) to special interests and core contributors of the protocol. Each person is given a vesting package which varies in token amounts and duration (usually 1-4 years). To learn more about vesting in crypto see [here](https://cointelegraph.com/explained/vesting-in-crypto-explained).
 
 Why a beacon proxy specifically?
 
 1. It had to be easily upgradeable. Vesting packages had to be upgradeable because they call functions on the Kwenta staking system which is also upgradeable. If the staking system is upgraded in the future, then functionality on the vesting packages might no longer work. Making vesting packages upgradeable allows for them to be future-proof
 2. Every package had the same vesting logic ( `vest()`, `stake()`, etc..) but different initialized parameters (token amounts, vesting lengths). Part of this required making vesting packages to be standalone contracts or "siloed" because
 
-    a. Simpler development: having one initializable contract per person was a lot simpler than having one large contract with complex mappings to keep track of everyone's different vesting package. Also, the \$KWENTA for each package was automatically staked upon package creation which meant that each person was accruing rewards. If everyone's packages were all together in 1 contract then rewards would get intermingled and messy.
+    a. Simpler development: having one initializable contract per person was a lot simpler than having one large contract with complex mappings to keep track of everyone's different vesting package. Also, the KWENTA for each package was automatically staked upon package creation which meant that each person was accruing rewards. If everyone's packages were all together in 1 contract then rewards would get intermingled and messy.
 
     b. Ownership of vesting packages could be easily transferred to other addresses or a multi-sig.
 
