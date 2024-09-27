@@ -572,7 +572,7 @@ Here are the highlights:
 - within each group
     - the `payable` functions go first
     - followed by the non-`payable` non-`view` functions
-    - and the `view` functions go go last
+    - and the `view` functions go last
 
 ## 13. Missing logs or incorrectly indexed logs
 
