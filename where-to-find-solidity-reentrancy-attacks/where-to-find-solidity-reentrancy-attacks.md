@@ -147,7 +147,7 @@ contract FooToken is ERC721 {
 - `safeBatchTransferFrom`
 - `_mintBatch`
 
-Even more confusing, `_mint` in ERC1155 does not behave like `_mint` in [ERC721](http://rareskills.io/post/erc721). It behaves like `_safeMint` in ERC721.
+Even more confusing, `_mint` in ERC1155 does not behave like `_mint` in [ERC721](https://rareskills.io/post/erc721). It behaves like `_safeMint` in ERC721.
 
 Nothing is “safe” in ERC1155. Every method calls the receiving contract. There is nothing wrong with this design choice, it just means you must follow the check-effects pattern or using reentrancy guards — as you should be doing anyway.
 
