@@ -292,7 +292,7 @@ The implication of the previous section is that access lists should not be used 
 
 For example, if we use a storage slot number determined based on a certain block number, the storage slot will not generally be predictable.
 
-Another example is storage slots that depend on when the transaction occurred. Some implementations of [ERC-721](http://rareskills.io/post/erc721) push owner addresses onto an array and use the array index to identify NFT ownership. As a result, the storage slot for a token depends on the order in which users minted and that can not be predicted.
+Another example is storage slots that depend on when the transaction occurred. Some implementations of [ERC-721](https://www.rareskills.io/post/erc721) push owner addresses onto an array and use the array index to identify NFT ownership. As a result, the storage slot for a token depends on the order in which users minted and that can not be predicted.
 
 ## When does the access list save gas?
 
