@@ -55,7 +55,7 @@ Not that much, but it still requires some study. Rust is not a language that you
 
 However, if you do this with Rust, you will run into some frustrating roadblocks. Rust has syntax that is hard to look up (try looking up a “#” in the search engine), and it has concepts that aren’t found in other programming languages.
 
-Rust is a vast language. However, you only need to know a subset of it. Our [Solana development course](http://rareskills.io/solana-tutorial) teaches Rust alongside Solana so that you only focus on the parts of Rust that you need.
+Rust is a vast language. However, you only need to know a subset of it. Our [Solana development course](https://rareskills.io/solana-tutorial) teaches Rust alongside Solana so that you only focus on the parts of Rust that you need.
 
 ## How Solana can use Python
 
