@@ -62,7 +62,7 @@ Contract `B` does a delegatecall to `A` which is using the `nodelegatecall` modi
 
 ## Motivation for nodelegatecall
 
-[Uniswap V2](http://rareskills.io/uniswap-v2-book) is the most forked DeFi protocol in history. The Uniswap V2 protocol faced competition from projects copying the source code line-by-line and marketing the new product as an alternative to Uniswap V2 and sometimes incentivizing users by providing airdrops.
+[Uniswap V2](https://rareskills.io/uniswap-v2-book) is the most forked DeFi protocol in history. The Uniswap V2 protocol faced competition from projects copying the source code line-by-line and marketing the new product as an alternative to Uniswap V2 and sometimes incentivizing users by providing airdrops.
 
 To prevent this from happening, the Uniswap team licensed Uniswap V3 under the [Business Source License](https://support.uniswap.org/hc/en-us/articles/14569783029645-Uniswap-v3-Licensing) — anyone can copy the code but it cannot be used for commercial purposes until the license expired in April 2023.
 
