@@ -200,7 +200,7 @@ Similarly, when ABDK does a multiplication, instead of dividing the product of `
 
 ### Uniswap V2 Fixed Point Library
 
-The fixed point library of [Uniswap V2](http://rareskills.io/uniswap-v2-book) is quite simple because the only operations Uniswap V2 does with fixed point numbers is addition and division of a fixed point number by an integer.
+The fixed point library of [Uniswap V2](https://rareskills.io/uniswap-v2-book) is quite simple because the only operations Uniswap V2 does with fixed point numbers is addition and division of a fixed point number by an integer.
 
 ```solidity
 pragma solidity =0.5.16;
