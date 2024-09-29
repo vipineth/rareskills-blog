@@ -4,8 +4,6 @@ Smart contract creation cost can be anywhere from \$10 to \$2,000 assuming Ether
 
 There are a total of six components that determine the amount of gas required to deploy the contract. The cost of the gas in dollar terms depends on market conditions and network conditions. We will work out all of these numbers in this article.
 
-If you want to estimate the deployment cost conveniently, use our [smart contract deployment cost calculator](https://www.rareskills.io/smart-contract-deployment-cost-calculator).
-
 ## Smart contract deployment cost
 
 1. The 21,000 gas that all [Ethereum](https://www.rareskills.io/post/generate-ethereum-address-from-private-key-python) transactions must pay
