@@ -18,11 +18,11 @@ To understand why we need an extension like `ERC721Enumerable`, let's consider a
 
 We would have to call the `balanceOf()` function with the token owner's address, which would give us the number of `NFTs` owned by that address. Then, we would loop over all the `tokenIDs` in the ERC721 contract and call the `ownerOf()` function for each of these `tokenIDs`.
 
-Let's assume that the total supply of NFTs is 1000 and an address owns two NFTs, the first and the last. That is, it owns the `tokenIDs` [#1](https://www.rareskills.io/blog/hashtags/1) and [#1000](https://www.rareskills.io/blog/hashtags/1000).
+Let's assume that the total supply of NFTs is 1000 and an address owns two NFTs, the first and the last. That is, it owns the `tokenIDs` #1 and #1000.
 
 ![An array of token ids](https://static.wixstatic.com/media/706568_dd37b28a663646c09792429ecc60a6cb~mv2.png/v1/fill/w_740,h_231,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/706568_dd37b28a663646c09792429ecc60a6cb~mv2.png)
 
-To find the 2 `tokenIDs` owned by the address (token [#1](https://www.rareskills.io/blog/hashtags/1) and token [#1000](https://www.rareskills.io/blog/hashtags/1000)), we would have to loop over all the `NFTs` in a contract and query `ownerOf()` on that `ID` (from 1 to 1000), which is computationally expensive. Furthermore, we don't always know all the tokenIDs in the contract, so we might not be able to do this.
+To find the 2 `tokenIDs` owned by the address (token #1 and token #1000, we would have to loop over all the `NFTs` in a contract and query `ownerOf()` on that `ID` (from 1 to 1000), which is computationally expensive. Furthermore, we don't always know all the tokenIDs in the contract, so we might not be able to do this.
 
 In the upcoming sections, we'll learn how `ERC721Enumerable` solves this problem.
 
@@ -79,7 +79,7 @@ For the sake of simplicity, we'll use the same set of tokenIDs for every example
 
 The `_allTokens` array allows us to sequentially iterate over all `NFTs` in a contract. The `_allTokens` private array holds every existing `tokenID` (irrespective of its ownership status).
 
-Initially, the order of `tokenIDs` in `_allTokens` depends on when they were minted. In the above diagram, `tokenID` **[#2](https://www.rareskills.io/blog/hashtags/2)** is at index **[#0](https://www.rareskills.io/blog/hashtags/0)** since it was minted before the other `tokenIDs`. This order can change upon burning of `tokenIDs`.
+Initially, the order of `tokenIDs` in `_allTokens` depends on when they were minted. In the above diagram, `tokenID` `#2` is at index `#0` since it was minted before the other `tokenIDs`. This order can change upon burning of `tokenIDs`.
 
 ### <span style="color:#008aff">_allTokensIndex mapping</span>:
 
@@ -91,7 +91,7 @@ Being able to quickly find the `tokenID` enables the burn function to remove the
 
 ![A diagram showing how _allTokensIndex holds the indexes of tokenIDs from _allTokens array](https://static.wixstatic.com/media/706568_cc9eb6a8736a4532978a8183cb047f9a~mv2.png/v1/fill/w_740,h_363,al_c,q_85,enc_auto/706568_cc9eb6a8736a4532978a8183cb047f9a~mv2.png)
 
-The diagram above illustrates a mapping of `tokenIDs` to their corresponding index values. The `tokenID` [#2](https://www.rareskills.io/blog/hashtags/2) maps to the `0th` index since it was the first token minted in the contract. This mapping pattern continues for every token that gets minted.
+The diagram above illustrates a mapping of `tokenIDs` to their corresponding index values. The `tokenID` #2 maps to the `0th` index since it was the first token minted in the contract. This mapping pattern continues for every token that gets minted.
 
 ### <span style="color:Red">_ownedTokens mapping:</span>
 
@@ -99,7 +99,7 @@ The _ownedTokens mapping is used to track the `tokenIDs` owned by an address. It
 
 ![A diagram showing how the _ownedTokens mapping maps an address to index to tokenID](https://static.wixstatic.com/media/706568_5d6f6d4a377f48b488b7521e7cf503ea~mv2.png/v1/fill/w_740,h_304,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/706568_5d6f6d4a377f48b488b7521e7cf503ea~mv2.png)
 
-In the above diagram, the address '0xAli3c3' owns 3 NFTs, and thus has a mapping for 3 `tokenIDs`. The other address (0xb0b) owns a single token, and thus has a mapping for a single `tokenID`. At the index of [#2](https://www.rareskills.io/blog/hashtags/2), the nested mapping for the '0xAli3c3' address maps to the `tokenID` [#1](https://www.rareskills.io/blog/hashtags/1).
+In the above diagram, the address '0xAli3c3' owns 3 NFTs, and thus has a mapping for 3 `tokenIDs`. The other address (0xb0b) owns a single token, and thus has a mapping for a single `tokenID`. At the index of #2, the nested mapping for the '0xAli3c3' address maps to the `tokenID` #1.
 
 ### <span style="color:#8d28a4">_ownedTokensIndex mapping:</span>
 
@@ -139,7 +139,7 @@ This function is a wrapper around the `_ownedTokens` mapping with some input val
 
 ![A visual diagram example of an _ownedTokens](https://static.wixstatic.com/media/706568_1d6e7a472132470ca5e4debe29e72601~mv2.png/v1/fill/w_740,h_301,al_c,q_85,enc_auto/706568_1d6e7a472132470ca5e4debe29e72601~mv2.png)
 
-In the above example of the `_ownedTokens` mapping, the address '`0xAli3c3`' owns 3 `tokenIDs`. If the function gets called with this address and an `index` of 2, the tokenID **[#1](https://www.rareskills.io/blog/hashtags/1)** gets returned.
+In the above example of the `_ownedTokens` mapping, the address '`0xAli3c3`' owns 3 `tokenIDs`. If the function gets called with this address and an `index` of 2, the tokenID #1 gets returned.
 
 ## Adding/Removing tokenIDs From Enumeration
 
@@ -167,7 +167,7 @@ The rest of such functions in the extension are:
 
 It uses the `balanceOf()` function to determine the `index` that can be assigned to the newly minted `tokenID`.
 
-`balanceOf()` will return 3 for an address that owns 3 `tokenIDs`. This means that index [#3](https://www.rareskills.io/blog/hashtags/3) can be assigned to a newly minted `tokenID` (since indexing starts from 0).
+`balanceOf()` will return 3 for an address that owns 3 `tokenIDs`. This means that index #3 can be assigned to a newly minted `tokenID` (since indexing starts from 0).
 
 ![_addTokenToOwnerEnumeration() function](https://static.wixstatic.com/media/706568_32278bf97ee844f4b55caa628070ccf2~mv2.png/v1/fill/w_740,h_229,al_c,lg_1,q_85,enc_auto/706568_32278bf97ee844f4b55caa628070ccf2~mv2.png)
 
@@ -189,7 +189,7 @@ The _four_ private functions that we briefly learned about in the previous secti
 
 It is invoked whenever the ownership of a `tokenID` changes. There are two pairs of conditional statements in the function. Let's understand what they're doing:
 
-### <span style="color:#008aff">Conditional Statements</span> [#1](https://www.rareskills.io/blog/hashtags/1): <span style="color:#008aff">Checking The Sender Address</span>
+### <span style="color:#008aff">Conditional Statements</span> #1: <span style="color:#008aff">Checking The Sender Address</span>
 
 The first pair checks if the `tokenID` is being minted or transferred. It handles the removal of a `tokenID` from the previous owner's data structures. Assigning an owner to the `tokenID` is handled in the next conditional statement.
 
@@ -205,7 +205,7 @@ If it is being transferred, `_removeTokenFromOwnerEnumeration` is called, which 
 
 ![Diagram showing the state changing codes that deletes tokenID from _ownedTokens and _owned TokensIndex in the _removeTokenFromOwnerEnumeration() function](https://static.wixstatic.com/media/706568_730e7706d77a4eef81b912b35f50c531~mv2.png/v1/fill/w_740,h_200,al_c,lg_1,q_85,enc_auto/706568_730e7706d77a4eef81b912b35f50c531~mv2.png)
 
-### <span style="color:Red">Conditional Statements</span> [#2](https://www.rareskills.io/blog/hashtags/2)<span style="color:Red">: Checking The Receiver Address</span>
+### <span style="color:Red">Conditional Statements</span> #2<span style="color:Red">: Checking The Receiver Address</span>
 
 The first condition isn't concerned with the address that the `tokenID` is being transferred to. It is the second conditional statement that checks whether the `tokenID` is being burned or transferred to a non-zero address.
 
