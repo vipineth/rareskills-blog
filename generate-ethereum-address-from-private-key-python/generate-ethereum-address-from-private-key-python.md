@@ -2,7 +2,7 @@
 
 ## Generate Ethereum Address from Public Key
 
-An [ethereum](https://www.rareskills.io/post/9-biggest-gas-guzzlers-in-solidity-on-ethereum) address is the last 20 bytes of the keccack256 of the public key. The public key algorithm is secp256k1, the same used in bitcoin.
+An Ethereum address is the last 20 bytes of the keccack256 of the public key. The public key algorithm is secp256k1, the same used in bitcoin.
 
 Because it is an elliptic curve algorithm, the public key is an (x, y) pair corresponds to a point on the elliptic curve.
 
@@ -37,7 +37,7 @@ The ecpy library is here [https://github.com/cslashm/ECPy](https://github.com/cs
 
 However, the python implementation allows you to see step by step the elliptic curve math used to derive the public key.
 
-You can use this code to generate an [ethereum](https://www.rareskills.io/post/ethereum-contract-creation-code) vanity address with brute force, but be mindful that if your source of randomness is not secure or has too few bits of randomness, you may fall victim to a hack similar to [this](https://cointelegraph.com/news/almost-1m-in-crypto-stolen-from-vanity-address-exploit).
+You can use this code to generate an Ethereum vanity address with brute force, but be mindful that if your source of randomness is not secure or has too few bits of randomness, you may fall victim to a hack similar to [this](https://cointelegraph.com/news/almost-1m-in-crypto-stolen-from-vanity-address-exploit).
 
 ## Generate private key with python and coin flips or dice
 
