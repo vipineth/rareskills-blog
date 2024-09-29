@@ -81,7 +81,7 @@ The [Solana client](https://github.com/solana-labs/solana) itself, the program t
 
 ## Addendum: Rust is migrating BPF to SBF.
 
-As of October 2022, [Solana](https://www.rareskills.io/post/the-fastest-and-most-efficient-way-to-learn-solana-for-solidity-developers) began migrating from BPF to SBF (Solana binary format). As of the time of writing, the documentation on this change is quite sparse, but this won’t affect most developers. If your build tool is configured to compile to BPF, you will get a deprecation warning, but everything will still run. Just change your build flags.
+As of October 2022, Solana began migrating from BPF to SBF (Solana binary format). As of the time of writing, the documentation on this change is quite sparse, but this won’t affect most developers. If your build tool is configured to compile to BPF, you will get a deprecation warning, but everything will still run. Just change your build flags.
 
 ## Learn More from RareSkills
 
