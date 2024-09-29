@@ -100,7 +100,7 @@ If multiple contracts or libraries are defined inside the import file, you will 
 ### 5\. Delete unused imports
 
 
-If you use a [smart contract security tool](https://www.rareskills.io/post/smart-contract-audit-tools) like Slither, this will be caught automatically. But be sure to remove these. Don’t be afraid to delete code.
+If you use a smart contract security tool like Slither, this will be caught automatically. But be sure to remove these. Don’t be afraid to delete code.
 
 
 Contract Level
