@@ -5,7 +5,7 @@
 
 ## Solana programming language
 
-The primary [Solana programming language](https://www.rareskills.io/solana-bootcamp) is [Rust](https://www.rareskills.io/rust-bootcamp), but [C, C++](https://docs.solana.com/developing/on-chain-programs/developing-c), and even [Python](https://seahorse-lang.org/) are supported.
+The primary [Solana programming language](https://www.rareskills.io/solana-tutorial) is [Rust](https://www.rareskills.io/rust-bootcamp), but [C, C++](https://docs.solana.com/developing/on-chain-programs/developing-c), and even [Python](https://seahorse-lang.org/) are supported.
 
 Solana coding language uses Rust, C, and C++ in a similar way. We’ll discuss Python in a later section.
 
