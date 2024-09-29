@@ -146,6 +146,6 @@ We've only included problems from the free version.
 49. [https://leetcode.com/problems/destination-city/](https://leetcode.com/problems/destination-city/)
 50. [https://leetcode.com/problems/number-of-good-pairs](https://leetcode.com/problems/number-of-good-pairs)
 
-Like what you see here? Check out our [Solidity Bootcamp](https://www.rareskills.io/web3-blockchain-bootcamps-solidity) and [Rust Bootcamp](https://www.rareskills.io/web3-blockchain-bootcamps/rust-and-solana).
+Like what you see here? Check out our [Free Solidity Course](https://www.rareskills.io/learn-solidity).
 
 *Originally Published Dec 8, 2022*
