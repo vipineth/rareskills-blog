@@ -101,7 +101,7 @@ Web3 engineering is not a shortcut to avoid learning things in web2 that seem bo
 
 Reputable blockchain companies want to see you know how to write production grade code, regardless of if it is [solidity](https://www.rareskills.io/solidity-bootcamp), [rust](https://www.rareskills.io/rust-bootcamp), [vyper](https://github.com/vyperlang/vyper), or whatever programming language. They want to see you can reason about what is going on behind the scenes and can think through a lot of corner cases. They want to see you know how to solve a problem several ways and can think through the relative tradeoffs of the solutions.
 
-These skills are not specific to web3. They are groomed in [web2](https://www.rareskills.io/post/thee-reasons-learning-web3-programming-will-make-you-a-better-web2-developer).
+These skills are not specific to web3, but are developed also in web2.
 
 The longer you’ve been working as a traditional software engineer (assuming you’ve been **learning and working** not **coasting and working**), the higher the tier you can aim for.
 
