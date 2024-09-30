@@ -155,6 +155,6 @@ We present a novel method for assigning addresses to a presale or airdrop that i
 
 Our work is only a proof of concept at this stage. Developers are advised to use caution using the code in production.
 
-This project was created by [Suthan Somadeva](https://twitter.com/peakycryptos) and [Michael Burke](https://twitter.com/ThisIsMikeDB) as part of the [RareSkills Solidity Bootcamp](https://www.rareskills.io/web3-blockchain-bootcamps/solidity). The code implementation and unit tests are on [github](https://github.com/RareSkills/RSA-presale-allowlist).
+This project was created by [Suthan Somadeva](https://twitter.com/peakycryptos) and [Michael Burke](https://twitter.com/ThisIsMikeDB) as part of the [RareSkills Solidity Bootcamp](https://www.rareskills.io/solidity-bootcamp). The code implementation and unit tests are on [github](https://github.com/RareSkills/RSA-presale-allowlist).
 
 *Originally Published Dec 7, 2022*
