@@ -256,7 +256,7 @@ Coming to blockchain for the purpose of salary is a flawed career strategy. If y
 
 However, smart people are passionate about it for good reasons besides money. It’s a legitimately exciting way to do computer science. Although salaries aren’t as high as many sources think they are, they still provide asymmetric upside in other ways.
 
-So check out our [blockchain bootcamps](https://www.rareskills.io/web3-blockchain-bootcamps/) and [apply to RareSkills](https://www.rareskills.io/apply-now).
+So check out our [blockchain bootcamps](https://www.rareskills.io/web3-blockchain-bootcamps) and [apply to RareSkills](https://www.rareskills.io/apply-now).
 
 We don’t promise you a higher salary. We promise you something better.
 
