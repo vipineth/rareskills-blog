@@ -83,7 +83,7 @@ What is ERC165 used for?
 42. Describe how to use a lending protocol to go leveraged long or leveraged short on an asset.
 43. What is a perpetual protocol?
 
-# Hard
+## Hard
 1. How does fixed point arithmetic represent numbers?
 2. What is an ERC20 approval frontrunning attack?
 3. What opcode accomplishes address(this).balance?
