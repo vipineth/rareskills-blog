@@ -178,6 +178,4 @@ Gas per gwei can be obtain from sites like [ethgasstation](https://ethgasstation
 
 $66,862 \times 20 \times 1000 \div 1 \text{ billion} = \$1.34$
 
-Again, our calculator is here: [smart contract deployment cost calculator](https://www.rareskills.io/smart-contract-deployment-cost-calculator)
-
 *Originally Published Dec 31, 2022*
