@@ -8,7 +8,7 @@ All industries have a tier list or implied ranking. It’s usually unspoken, but
 
 **Blockchain developer jobs:**
 
-At [RareSkills](https://rareskills.io/), we get a lot of questions about how to get [blockchain job](https://raretalent.xyz)s including Blockchain developer jobs. But this question assumes that all [web3 engineering jobs](https://www.rareskills.io/hire-solidity-developers) are created equal. They aren’t.
+At [RareSkills](https://rareskills.io), we get a lot of questions about how to get [blockchain job](https://raretalent.xyz)s including Blockchain developer jobs. But this question assumes that all [web3 engineering jobs](https://raretalent.xyz) are created equal. They aren’t.
 
 Some engineers are surprised when we respond “you can already get a job in blockchain,” but this is followed up with the qualifier, “it’s probably not the one you want.”
 
