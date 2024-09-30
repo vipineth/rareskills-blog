@@ -16,7 +16,7 @@ Some engineers are surprised when we respond “you can already get a job in blo
 
 In this tier list, we are talking specifically about engineering jobs that apply to blockchain specifically. Particularly, we will talk about smart contract development, [smart contract auditing](https://www.rareskills.io/post/smart-contract-audit), and blockchain protocol development.
 
-You can get a (good!) job in blockchain while knowing relatively little about smart contracts and consensus algorithms by working on tooling, front-end web applications, data science, and backend infrastructure. Learn more in our article about getting [web2 engineering jobs in web3](https://www.rareskills.io/post/you-don-t-need-solidity-to-work-in-web3).
+You can get a (good!) job in blockchain while knowing relatively little about smart contracts and consensus algorithms by working on tooling, front-end web applications, data science, and backend infrastructure. Ironically, there are more web2 programming jobs in web3 than Solidity or blockchain roles. Smart contracts are fairly small compared to the amount of code that goes into the frontend and backend part of the application.
 
 However, what most engineer’s have in mind when they say “get a job in web3” they mean working on the “unique stuff,” specifically the blockchain itself, the smart contracts, and the security auditing. These are specialized and new skills that aren’t used elsewhere.
 
@@ -48,7 +48,7 @@ Without further ado, let’s share the tier list! In honor of our gamer constitu
 
 ### **S tier**
 
--   Senior protocol engineer at [Ethereum](https://www.rareskills.io/post/9-biggest-gas-guzzlers-in-solidity-on-ethereum), [Solana](https://www.rareskills.io/solana-bootcamp), or an established and fundamentally innovative blockchain.
+-   Senior protocol engineer at Ethereum, [Solana](https://www.rareskills.io/solana-tutorial), or an established and fundamentally innovative blockchain.
     
 -   Architect for tokenomics and protocol design of fundamentally innovative DeFi applications.
     
