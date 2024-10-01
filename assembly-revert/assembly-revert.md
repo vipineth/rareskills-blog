@@ -402,7 +402,7 @@ The steps to replicate a custom revert  with arguments in assembly is similar to
 2. Store the argument in memory after the selector
 3. Trigger the revert by passing the starting memory location and the total size (4 bytes for the selector + argument size) to the `revert` function
 
-#### 1. Store the function selector in memory for the custom error
+### 1. Store the function selector in memory for the custom error
 
 Just like in the custom error without parameters, we’ll need to first derive the function selector like so:
 
@@ -420,7 +420,7 @@ assembly{
 }
 ```
 
-#### 2. Store the argument in memory after the selector
+### 2. Store the argument in memory after the selector
 
 After writing the function selector to memory starting from the `0th` byte, we’ll now store the `address` from the `4th` byte as shown below:
 
@@ -435,7 +435,7 @@ assembly{
 
  The function `caller()` will return the address upcasted to 32 bytes. So if the original address was `0x5B38Da6a701c568545dCfcB03FcB875f56beddC4` `caller()` will return `0x00000000000000000000000005B38Da6a701c568545dCfcB03FcB875f56beddC4` and this is the 32-byte value `mstore` will place in memory starting at byte 4.
 
-#### 3. Trigger the revert
+### 3. Trigger the revert
 
 And finally, we can now trigger the revert with the starting memory location and the total size the data we’ve stored so far (4 bytes for the selector + 32 bytes for the address) occupies 36 bytes (hex 0x24) as arguments as shown below:
 
@@ -534,7 +534,7 @@ contract RevertErrorExample {
 
 Let’s examine the assembly block line-by-line.
 
-#### 1. Store the function selector for `Error(string)`
+### 1. Store the function selector for `Error(string)`
 
 We first store the [function selector](https://www.rareskills.io/post/function-selector/) at the starting memory location (`0x00`):
 
@@ -560,7 +560,7 @@ The first 4 bytes (`0x08c379a0`) is the selector padded with zeros to make up fo
 
 ![mstore the function selector in memory](https://pub-32882f615aa84e4a94e1279ccf3ab85a.r2.dev/Assembly%20revert%20f75176e4625e49c68bf53cb92aefe9fa/image%2013.png)
 
-#### 2. Store the offset to the error message string
+### 2. Store the offset to the error message string
 
 The next part of the string error we store is the offset. The offset is 32 bytes (`0x20` in hex).
 
@@ -574,7 +574,7 @@ This means that the remaining data from the function selector (the padded zeros 
 
 ![storing the offset to the error message string](https://pub-32882f615aa84e4a94e1279ccf3ab85a.r2.dev/Assembly%20revert%20f75176e4625e49c68bf53cb92aefe9fa/image%2014.png)
 
-#### 3. Store the length of the error message string
+### 3. Store the length of the error message string
 
 The third part of the string we need to store is the length of the string data. Recall that we stored the function selector at the `0x00` location and it took up 4 bytes. Then the next memory location was the offset at memory location `0x04` which took up 32 bytes. 
 
@@ -588,7 +588,7 @@ mstore(0x24, 0xc) // 36 is 0x24 in hex
 
 ![location in memory to store the length of the error message string](https://pub-32882f615aa84e4a94e1279ccf3ab85a.r2.dev/Assembly%20revert%20f75176e4625e49c68bf53cb92aefe9fa/image%2015.png)
 
-#### 4. Store the actual error message string
+### 4. Store the actual error message string
 
 The actual string `Unauthorized` is stored starting at 68 (`0x44`) bytes from the beginning which corresponds to the 4 bytes for the selector + 32 bytes offset + 32 bytes for the length. So far, we have written 100 bytes of data.
 
@@ -600,7 +600,7 @@ mstore(0x44, "Unauthorized") //68 is 0x44 in hex
 
 ![example location in memory to store the raw error message string](https://pub-32882f615aa84e4a94e1279ccf3ab85a.r2.dev/Assembly%20revert%20f75176e4625e49c68bf53cb92aefe9fa/image%2016.png)
 
-#### 5. Trigger the revert:
+### 5. Trigger the revert:
 
 The revert operation uses the starting memory location and the total size of the data to trigger the revert. 
 
