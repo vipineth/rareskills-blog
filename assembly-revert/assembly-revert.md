@@ -23,7 +23,7 @@ The following is an example of how to use `mstore`:
 
 ```solidity
 assembly {
-	 mstore(memoryLocation, dataToStore)
+     mstore(memoryLocation, dataToStore)
 }
 ```
 
@@ -31,10 +31,10 @@ If you want to store 32 bytes of `0xFF`at the memory location `0x00`, you would 
 
 ```solidity
 assembly {
-	mstore(
-		0x00, 
-		0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-	)
+    mstore(
+        0x00, 
+        0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    )
 }
 ```
 
@@ -43,10 +43,10 @@ This stores the full 32-byte value starting at index `0x00`. If you instead want
 ```solidity
 
 assembly {
-	mstore(
-		0x01, 
-		0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-	)
+    mstore(
+        0x01, 
+        0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    )
 }
 
 ```
@@ -93,7 +93,7 @@ Alternatively, we can use the `mstore8` opcode, which is similar to `mstore` but
 
 ```solidity
 assembly {
-	 mstore8(memoryLocation, exactlyOneByteOfData)
+     mstore8(memoryLocation, exactlyOneByteOfData)
 }
 ```
 
@@ -120,7 +120,7 @@ If you want to write `0xff` in the `0th` byte using `mstore` instead of `mstore8
 ```solidity
 assembly {
     mstore(
-	    0x00, 0xff00000000000000000000000000000000000000000000000000000000000000
+        0x00, 0xff00000000000000000000000000000000000000000000000000000000000000
     )
 }
 ```
@@ -224,7 +224,7 @@ Here is a simple example of a revert without a reason using assembly:
 contract ContractA {
     function zero() external {
         assembly {
-	        revert(0,0) //<--- simple revert without reason
+            revert(0,0) //<--- simple revert without reason
         }
     }
 }
@@ -273,7 +273,7 @@ Since we are using the custom error `Unauthorized()` as an example, we’ll firs
 ```solidity
 bytes32 selector = bytes32(abi.encodeWithSignature("Unauthorized()")); // 0x82b42900
 
-assembly {	
+assembly {    
     mstore(0x00, 0x82b4290000000000000000000000000000000000000000000000000000000000)
 }
 ```
@@ -314,7 +314,7 @@ pragma solidity 0.8.27;
 contract RevertErrorExample {
     error Unauthorized();
 
-		// assembly version
+        // assembly version
     function revertWithAssembly() public pure {
         assembly {
             mstore(
@@ -326,7 +326,7 @@ contract RevertErrorExample {
         }
     }
 
-		// solidity version
+        // solidity version
     function revertWithoutAssembly() public pure {
         revert Unauthorized();
     }
@@ -351,8 +351,8 @@ For example, instead of padding with zeros like this:
 ```solidity
 assembly{
     mstore(
-	       0x00,
-	       0x82b4290000000000000000000000000000000000000000000000000000000000
+           0x00,
+           0x82b4290000000000000000000000000000000000000000000000000000000000
     )
 }
 ```
@@ -540,7 +540,7 @@ We first store the [function selector](https://www.rareskills.io/post/function-s
 
 ```solidity
 assembly {
-		mstore(0x00, 0x08c379a000000000000000000000000000000000000000000000000000000000) //Store the function selector
+        mstore(0x00, 0x08c379a000000000000000000000000000000000000000000000000000000000) //Store the function selector
 }
 ```
 
