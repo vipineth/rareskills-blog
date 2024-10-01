@@ -73,7 +73,7 @@ Wagmi is basically a set of React Hooks that simplifies [Ethereum development](h
 
 Head over to **pages/_app.tsx** and add in the following code. Each of functionalities are explained in the comment sections.
 
-```tsx=
+```tsx
 import "@/styles/globals.css"; // CSS doesnt really matter now
 import type { AppProps } from "next/app";
 import { WagmiConfig, configureChains, createClient, mainnet } from "wagmi";
@@ -140,7 +140,7 @@ We now have our networks configured, our next step is to allow users to choose w
 
 On **pages/index.tsx** copy and paste the following code. Make sure you add the css, so it looks good!
 
-```tsx=
+```tsx
 import { useAccount, useConnect } from "wagmi";
 import { useEffect } from "react";
 import styles from "@/styles/Home.module.css";
@@ -500,7 +500,7 @@ Now that we’ve connected our wallet, we can transfer funds from our wallet to 
 
 We’ll now be creating the input fields and send button for the transaction. Create a new file under **pages**/ directory and name it **RareSend.tsx**. Copy paste the code below. The explanations are in the code comments.
 
-```tsx=
+```tsx
 import { parseEther } from "ethers/lib/utils.js";
 import React, { useState } from "react";
 import { useDebounce } from "use-debounce";
@@ -578,7 +578,7 @@ To avoid overloading the RPC and getting rate-limited, we’ll limit the use of 
 
 Next, simply add the <SendFunds disabled={!isConnected}/> like this in **pages/index.tsx**.
 
-```tsx=
+```tsx
 import { useAccount, useConnect } from "wagmi";
 import SendFunds from "./RareSend";
 import { useEffect } from "react";
@@ -622,7 +622,7 @@ NFTs of AI generated cats
 
 The mint function can be created as follows. Create a **mint.tsx** and add the codes below.
 
-```tsx=
+```tsx
 // Initialize ethers.js and wagmi dependencies
 import { ethers } from "ethers";
 import * as React from "react";
@@ -687,7 +687,7 @@ export function MintNFT() {
 
 Now you can simply insert it into the **index.tsx** file like this:
 
-```tsx=
+```tsx
 import { useAccount, useConnect } from "wagmi";
 import SendFunds from "./RareSend";
 import { useEffect } from "react";
