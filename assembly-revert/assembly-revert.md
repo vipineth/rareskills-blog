@@ -85,7 +85,7 @@ We can see how it looks like in memory if we return the stored data as shown in 
 
 The diagram below shows how `mstore` implicitly left-pads various hex values, with the first row being the example we just looked.
 
-![A diagram showing how values smaller than 32 bytes are left-padded when stored to byte 0](https://pub-32882f615aa84e4a94e1279ccf3ab85a.r2.dev/assembly-revert-images/mstore_(1).jpg)
+![A diagram showing how values smaller than 32 bytes are left-padded when stored to byte 0](https://pub-32882f615aa84e4a94e1279ccf3ab85a.r2.dev/assembly-revert-images/mstore.jpg)
 
 ## Using `mstore8` to store data in memory
 
