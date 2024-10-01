@@ -105,23 +105,19 @@ The following attack contract can be used to drain the bank:
 ```solidity
 contract BankDrainer {
 
-    function steal(
-        BadBank bank
-    ) external payable {
+    function steal(BadBank bank) external payable {
         require(msg.value == 1 ether, "send deposit 1 eth");
         bank.deposit{value: 1 ether}();
         bank.withdraw();
     }
 
-    receive()
-        external
-        payable {
-            // msg.sender is the BadBank because the BadBank
-            // called `receive()` when it transfered either
+    receive() external payable {
+        // msg.sender is the BadBank because the BadBank
+        // called `receive()` when it transfered either
 
-            while (msg.sender.balance >= 1 ether) {
-                BadBank(msg.sender).withdraw();
-            }
+        while (msg.sender.balance >= 1 ether) {
+            BadBank(msg.sender).withdraw();
+        }
     }
 }
 ```
@@ -241,18 +237,18 @@ import {Address} from "@openzeppelin/contracts/utils/Address.sol";
 
 contract SendEthExample {
 
-	using Address for address payable;
+    using Address for address payable;
 
-	// both these functions do the same thing. Note that OZ requires
+    // both these functions do the same thing. Note that OZ requires
     // payable addresses, but a low-level call does not
 
     function sendSomeEthV1(address receiver, uint256 amount) external payable {
-		payable(receiver).sendValue(amount);
+        payable(receiver).sendValue(amount);
     }
 
     function sendSomeEthV2(address receiver, uint256 amount) external payable {
-		(bool ok, ) = receiver.call{value: amount}("");
-		require(ok, "transfer failed");
+        (bool ok, ) = receiver.call{value: amount}("");
+        require(ok, "transfer failed");
     }
 }
 ```
@@ -345,9 +341,9 @@ Prior to Solidity 0.8.0, variables could overflow if a math operation happened t
 
 ```solidity
 function add(uint256 x, uint256 y) internal pure returns (uint256) {
-		uint256 sum = x + y;
-		require(sum >= x || sum >= y, "overflow");
-		return sum;
+    uint256 sum = x + y;
+    require(sum >= x || sum >= y, "overflow");
+    return sum;
 }
 ```
 
@@ -375,20 +371,20 @@ Let’s use a minimal example. Can you spot the problem?
 import "@openzeppelin/contracts@5.0.0/token/ERC721/ERC721.sol";
 
 contract NFTSale is ERC721("MyTok", "MT") {
-		uint256 public price;
-		uint256 public currentId;
+    uint256 public price;
+    uint256 public currentId;
 
-		function setPrice(
-				uint256 price_
-		) public {
+    function setPrice(
+        uint256 price_
+    ) public {
         price = price_;
-		}
-
-		function buyNFT() external payable {
-				require(msg.value == price, "wrong price");
-				currentId++;
-				_mint(msg.sender, currentId);
-		}
+    }
+	
+    function buyNFT() external payable {
+        require(msg.value == price, "wrong price");
+        currentId++;
+        _mint(msg.sender, currentId);
+    }
 }
 ```
 
@@ -400,30 +396,30 @@ Whenever you write a function that is public or external, ask yourself if there 
 import "@openzeppelin/contracts@5.0.0/token/ERC721/ERC721.sol";
 
 contract NFTSale is ERC721("MyTok", "MT") {
-		uint256 public price;
-		address owner;
-		uint256 public currentId;
+    uint256 public price;
+    address owner;
+    uint256 public currentId;
 
-		constructor() {
-				owner = msg.sender;
-		}
+    constructor() {
+        owner = msg.sender;
+    }
 
-		modifier onlyOwner() {
-				require(msg.sender == owner, "onlyOwner");
-				_;
-		}
+    modifier onlyOwner() {
+        require(msg.sender == owner, "onlyOwner");
+        _;
+    }
 
-		function setPrice(
-				uint256 price_
-		) public {
-            price = price_;
-		}
+    function setPrice(
+        uint256 price_
+    ) public {
+        price = price_;
+    }
 
-		function buyNFT() external payable {
-				require(msg.value == price, "wrong price");
-				currentId++;
-				_mint(msg.sender, currentId);
-		}
+    function buyNFT() external payable {
+        require(msg.value == price, "wrong price");
+        currentId++;
+        _mint(msg.sender, currentId);
+    }
 }
 ```
 
@@ -440,7 +436,7 @@ import "@openzeppelin/contracts@5.0.0/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts@5.0.0/access/Ownable.sol";
 
 contract GiveNFTToDonors is ERC721("MyTok", "MT"), Ownable(msg.sender) {
-		address[] donors;
+    address[] donors;
     uint256 currentId;
 
     receive() external payable {
@@ -451,7 +447,7 @@ contract GiveNFTToDonors is ERC721("MyTok", "MT"), Ownable(msg.sender) {
     function distributeNFTs() external onlyOwner {
         for (uint256 i = 0; i < donors.length; i++) {
             currentId++;
-						_mint(msg.sender, currentId);
+            _mint(msg.sender, currentId);
         }
     }
 }
@@ -472,19 +468,16 @@ Consider the following examples:
 ```solidity
 contract LendingProtocol is Ownable {
 
-		function offerLoan(
-            uint256 amount,
-            uint256 interest,
-            uint256 duration)
-            external {
+    function offerLoan(
+        uint256 amount,
+        uint256 interest,
+        uint256 duration)
+    external {}
 
-		}
-
-		function setProtocolFee(
-            uint256 feeInBasisPoints)
-            external
-            onlyOwner {
-		}
+    function setProtocolFee(
+        uint256 feeInBasisPoints)
+        external
+    onlyOwner {}
 }
 ```
 
