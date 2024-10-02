@@ -30,7 +30,7 @@ contract InternalFunctionHarness is InternalFunction {
 }
 ```
 
-When you call a parent function that has the same name as the child, you must use the super keyword of the function will call itself and go into infinite recursion.
+When you call a parent function that has the same name as the child, you must use the super keyword or the function will call itself and go into infinite recursion.
 
 Alternatively, you can explicitly label your test function as a harness or fixture as follows
 
